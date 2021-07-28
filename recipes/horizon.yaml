@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: FrancescoRuscelli/horizon_gui
+  tag: master
+
+#build:
+#  type: pip
+
+depends:
+  - casadi_kin_din
