@@ -1,0 +1,3 @@
+depends:
+  - casadi_kin_dyn
+  - xbot2_examples

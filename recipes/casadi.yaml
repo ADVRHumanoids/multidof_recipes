@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: casadi/casadi.git
+  tag: "3.5.5"
+
+
+build:
+  type: cmake
+

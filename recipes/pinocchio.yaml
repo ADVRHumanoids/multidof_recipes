@@ -1,0 +1,15 @@
+clone:
+  type: git
+  server: github.com
+  repository: stack-of-tasks/pinocchio.git
+  tag: devel
+
+
+build:
+  type: cmake
+  args:
+    - -DBUILD_PYTHON_INTERFACE=OFF
+    - -DBUILD_PYTHON_INTERFACE=OFF
+    - -DBUILD_TESTING=OFF
+    - -DBUILD_UTILS=OFF
+

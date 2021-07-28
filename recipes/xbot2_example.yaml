@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_examples.git
+  tag: master
+
+build:
+  type: cmake
+
+depends:
+  - xbot2
+  - cartesian_interface
