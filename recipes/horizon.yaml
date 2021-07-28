@@ -8,4 +8,4 @@ clone:
 #  type: pip
 
 depends:
-  - casadi_kin_din
+  - casadi_kin_dyn
