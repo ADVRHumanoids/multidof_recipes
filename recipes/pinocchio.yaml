@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: stack-of-tasks/pinocchio.git
   tag: devel
+  recursive: true
 
 
 build:
