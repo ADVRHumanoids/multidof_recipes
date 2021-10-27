@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: gitlab.advr.iit.it
+  repository: amargan/xenomai.git
+  tag: v3.1_cmake
+  
+build:
+  type: custom
+  cmd:
+    - cd {srcdir} && ./scripts/bootstrap
+    - "{srcdir}/configure --enable-pshared --enable-tls --enable-registry --enable-dlopen-libs --enable-async-cancel --enable-smp"
+    - make -j {jobs}
+    - sudo make install

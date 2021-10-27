@@ -1,0 +1,33 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/matlogger2.git
+  tag: devel
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args:
+    - -DCPACK_PACKAGING_INSTALL_PREFIX=/opt/xbot
+  args_if:
+    ubuntu_release >= 20.04: 
+      - -DPYBIND11_PYTHON_VERSION=3
+      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python3))
+      - -DPYTHON_VERSION=3
+    ubuntu_release < 20.04: 
+      - -DPYBIND11_PYTHON_VERSION=2
+      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
+      - -DPYTHON_VERSION=2
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends: 
+  - pybind11
+
+

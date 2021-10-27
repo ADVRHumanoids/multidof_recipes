@@ -1,0 +1,34 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_wip.git
+  tag: devel
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args:
+    - -DXBOT2_DEBUG_PRINTS=TRUE
+  args_if:
+    xeno: 
+      - -DXBOT2_ENABLE_XENO=ON
+      - -DXBOT2_REALTIME=ON
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends: 
+  - XBotInterface
+  - matlogger2
+  - xbot_msgs
+
+depends_if:
+  xeno:
+    - Xenomai
+
+

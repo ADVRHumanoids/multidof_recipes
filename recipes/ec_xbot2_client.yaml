@@ -1,0 +1,24 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/ec_xbot2_client.git
+  tag: devel
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args_if:
+    xeno:
+      - -DXBOT2_ENABLE_XENO=ON
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends:
+  - xbot2
+  - ecat_master

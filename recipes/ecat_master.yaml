@@ -1,0 +1,30 @@
+clone:
+  type: git
+  server: gitlab.advr.iit.it
+  repository: xeno-ecat/ecat_master_advr.git
+  tag: xbot2_less_prints
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args:
+    - -DBUILD_TOOLS=OFF
+    - -DCMAKE_BUILD_TYPE=Release
+  args_if:
+    xeno:
+      - -DCMAKE_USE_XENOMAI=ON
+      - -DENABLE_XENO=ON
+      - -DBUILD_TOOLS=ON
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends:
+  - soem
+  - cppzmq
+  - protobuf

@@ -1,0 +1,19 @@
+# credits to Marco Ruzzon
+
+clone:
+  type: git
+  server: github.com
+  repository: alessiomargan/SOEM.git
+  tag: xeno3
+
+build:
+  type: cmake
+  args: []
+  args_if:
+    xeno:
+      - -DCMAKE_USE_XENOMAI=ON
+      - -DCMAKE_BUILD_TYPE=None
+
+depends_if:
+  xeno:
+    - Xenomai
