@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-centauro-ros-pkg.git
-  tag: updated_mass
+  tag: refactor
   
 build:
   type: cmake
