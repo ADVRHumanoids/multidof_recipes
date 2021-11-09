@@ -1,0 +1,15 @@
+clone:
+  type: git
+  server: github.com
+  repository: roboptim/roboptim-core-plugin-ipopt.git
+  tag: master
+
+build:
+  type: cmake
+  args:
+    - -DDISABLE_TESTS=ON
+
+depends:
+  - roboptim-core
+  - ipopt
+  - gfortran

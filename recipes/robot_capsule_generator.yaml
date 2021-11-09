@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/robot_capsule_generator.git
+  tag: master
+
+build:
+  type: cmake
+
+depends: 
+  - roboptim-capsule
+
+

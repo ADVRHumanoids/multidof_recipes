@@ -1,0 +1,3 @@
+depends:
+  - robot_capsule_generator
+  - moveit_compute_default_collisions

@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: roboptim/roboptim-core.git
+  tag: master
+
+build:
+  type: cmake
+  args:
+    - -DDISABLE_TESTS=ON
