@@ -1,0 +1,5 @@
+clone:
+  type: git
+  server: github.com
+  repository: francescoruscelli/spot-ros-pkg.git
+  tag: master
