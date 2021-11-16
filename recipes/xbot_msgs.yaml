@@ -1,0 +1,21 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot_msgs.git
+  tag: master
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  skip_if: ubuntu_release < 18.04
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends: []
+

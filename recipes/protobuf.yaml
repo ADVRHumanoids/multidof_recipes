@@ -1,0 +1,15 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/protobuf.git
+  tag: xbot2
+
+build:
+  type: cmake
+  cmakelists: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=Release
+    - -Dprotobuf_BUILD_TESTS=OFF
+    - -Dprotobuf_MSVC_STATIC_RUNTIME=ON
+
+depends: []

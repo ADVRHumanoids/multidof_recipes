@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/rbdl.git
+  tag: v250-fix
+
+build:
+  type: cmake
+  args:
+    - -DRBDL_BUILD_STATIC=TRUE 
+    - -DRBDL_BUILD_ADDON_URDFREADER=TRUE 
+    - -DRBDL_USE_ROS_URDF_LIBRARY=TRUE
+
+depends: []
+
+
