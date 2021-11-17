@@ -10,6 +10,9 @@ pre_build_if:
 
 build:
   type: cmake
+  args_if:
+    test:
+      - -DOPENSOT_COMPILE_TESTS=ON
 
 post_build_if:
   binary_gen:
