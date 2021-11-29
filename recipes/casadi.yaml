@@ -2,9 +2,14 @@ clone:
   type: git
   server: github.com
   repository: casadi/casadi.git
-  tag: "3.5.5"
+  tag: 3.5.5
+  recursive: true
 
 
 build:
   type: cmake
+  args:
+    -DWITH_OSQP=1
+    -DWITH_QPOASES=1
+    -DWITH_LAPACK=1
 
