@@ -10,3 +10,5 @@ source setup.bash
 forest --add-recipes git@github.com:ADVRHumanoids/multidof_recipes.git master --update
 forest <recipe-name> -j 4 
 ```
+
+NOTE: to enable the *xeno flags*, you can use the command `forest -m xeno <recipe-name> -j 4`
