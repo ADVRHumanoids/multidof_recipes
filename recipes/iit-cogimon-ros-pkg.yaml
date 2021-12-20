@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-cogimon-ros-pkg.git
+  tag: xbot2
+  
+build:
+  type: cmake
+  

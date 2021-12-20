@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/CogimonConfig.git
+  tag: xbot2
+
+
+depends:
+  - iit-cogimon-ros-pkg
