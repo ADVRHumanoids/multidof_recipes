@@ -6,6 +6,9 @@ clone:
 
 build:
   type: cmake
+  args_if:
+    xeno:
+      - -DXBOT2_ENABLE_XENO=ON
 
 depends:
   - xbot2

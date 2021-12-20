@@ -1,2 +1,3 @@
 depends: 
   - ec_xbot2_client
+  - xbot2_examples
