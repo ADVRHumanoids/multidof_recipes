@@ -19,6 +19,8 @@ build:
       - -DPYBIND11_PYTHON_VERSION=2
       - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
       - -DPYTHON_VERSION=2
+    test:
+      - -DXBOTIFC_BUILD_TESTS=ON
 
 post_build_if:
   binary_gen:
