@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/ec_xbot2_client.git
+  tag: devel
+
+build:
+  type: cmake
+  args:
+    - -DEC_CLIENT_ENABLE=OFF
+    - -DEC_CLIENT_ENABLE_DEVICE=OFF
+

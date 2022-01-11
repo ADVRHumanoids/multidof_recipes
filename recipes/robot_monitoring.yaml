@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/ModelInterfaceRBDL.git
-  tag: devel
+  repository: advrhumanoids/robot_monitoring.git
+  tag: xbot2-ec
 
 pre_build_if:
   binary_gen:
@@ -17,7 +17,7 @@ post_build_if:
     - cp *.deb {config.binary_dir}
 
 depends: 
-  - rbdl
-  - XBotInterface
+  - RobotInterfaceROS
+  - ec_msgs
 
 
