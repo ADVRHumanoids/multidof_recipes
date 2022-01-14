@@ -11,4 +11,4 @@ build:
     - -DDISABLE_TESTS=ON
   env_hooks:
     - SCRIPT_DIR=$( cd -- "$( dirname -- "${{BASH_SOURCE[0]}}" )" &> /dev/null && pwd )
-    - export LTDL_LIBRARY_PATH=$SCRIPT_DIR/../../lib/roboptim_core:\$LTDL_LIBRARY_PATH
+    - export LTDL_LIBRARY_PATH=$SCRIPT_DIR/../../lib/roboptim_core:$LTDL_LIBRARY_PATH
