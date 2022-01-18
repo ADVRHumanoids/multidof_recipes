@@ -6,4 +6,5 @@ clone:
   
 build:
   type: cmake
+  target: all
   
