@@ -1,7 +1,7 @@
 clone:
   type: git
-  server: gitlab.advr.iit.it
-  repository: xeno-ecat/ecat_master_advr.git
+  server: github.com
+  repository: advrhumanoids/ecat_master_advr.git
   tag: xbot2_less_prints
 
 pre_build_if:
