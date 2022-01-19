@@ -1,7 +1,7 @@
 clone:
   type: git
-  server: gitlab.advr.iit.it
-  repository: amargan/xenomai.git
+  server: github.com
+  repository: alessiomargan/xenomai.git
   tag: v3.1_cmake
   
 build:
