@@ -1,3 +1,5 @@
 depends:
-  - casadi_kin_dyn
-  - xbot2_examples
+  - cartesian_interface
+  - ModelInterfaceRBDL
+  - robot_monitoring
+  - xbot2
