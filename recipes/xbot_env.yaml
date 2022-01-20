@@ -6,3 +6,12 @@ clone:
 
 build:
   type: cmake
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
