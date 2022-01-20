@@ -11,5 +11,6 @@ forest --add-recipes git@github.com:ADVRHumanoids/multidof_recipes.git master --
 forest <recipe-name> -j 4 
 ```
 
-*NOTE #1* to enable the *xeno flags*, you can use the command `forest -m xeno <recipe-name> -j 4`
-*NOTE #2* to enable the xacro generation for robot repositories, you can use the command `forest -m xacro_gen <recipe-name> -j 4`
+*Note #1* to enable the *xeno flags*, you can use the command `forest -m xeno <recipe-name> -j 4`
+
+*Note #2* to enable the xacro generation for robot repositories, you can use the command `forest -m xacro_gen <recipe-name> -j 4`
