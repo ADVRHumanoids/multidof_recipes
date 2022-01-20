@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_desktop_full.git
+  tag: master
+
+build:
+  type: cmake
