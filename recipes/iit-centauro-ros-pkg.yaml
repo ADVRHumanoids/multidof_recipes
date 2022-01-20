@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-centauro-ros-pkg.git
-  tag: refactor
+  tag: master
   
 build:
   type: cmake
@@ -12,4 +12,7 @@ depends:
   - realsense_gazebo_description
   - velodyne_description
   - velodyne_gazebo_plugins
-  - capsule_generation
+
+depends_if:
+  xacro_gen:
+    - capsule_generation
