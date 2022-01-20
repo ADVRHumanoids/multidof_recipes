@@ -3,3 +3,8 @@ depends:
   - ModelInterfaceRBDL
   - robot_monitoring
   - xbot2
+
+depends_if:
+  binary_gen:
+    - xbot_env
+    - xbot2_desktop_full
