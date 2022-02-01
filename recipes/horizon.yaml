@@ -1,12 +1,5 @@
 clone:
   type: git
   server: github.com
-  repository: FrancescoRuscelli/horizon_gui
-  tag: master
-
-build:
-  type: cmake
-  cmakelists: horizon/cpp
-
-depends:
-  - casadi_kin_dyn
+  repository: ADVRHumanoids/horizon
+  tag: devel
