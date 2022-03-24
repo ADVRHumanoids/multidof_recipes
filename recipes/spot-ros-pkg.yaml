@@ -3,3 +3,4 @@ clone:
   server: github.com
   repository: francescoruscelli/spot-ros-pkg.git
   tag: master
+  ros_src: true

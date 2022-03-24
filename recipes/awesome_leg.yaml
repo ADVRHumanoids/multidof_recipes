@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/awesome_leg.git
+  tag: pholus
+  
+build:
+  type: cmake

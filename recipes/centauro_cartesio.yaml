@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: advrhumanoids/centauro_cartesio.git
   tag: 2.0-devel
+  ros_src: true
   
 build:
   type: cmake

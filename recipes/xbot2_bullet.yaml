@@ -6,6 +6,7 @@ clone:
 
 build:
   type: cmake
+  target: all
 
 depends:
   - xbot2
