@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/ecat_master_advr.git
-  tag: xbot2_less_prints
+  tag: freeze_test
 
 pre_build_if:
   binary_gen:
