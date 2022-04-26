@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/xbot2_wip.git
+  repository: advrhumanoids/xbot2.git
   tag: devel
 
 pre_build_if:
