@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: roboptim/roboptim-core-plugin-ipopt.git
+  repository: advrhumanoids/roboptim-core-plugin-ipopt.git
   tag: master
   recursive: true
 
