@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-relax-ros-pkg.git
-  tag: master
+  tag: new_version_devel
   ros_src: true
   
 build:
