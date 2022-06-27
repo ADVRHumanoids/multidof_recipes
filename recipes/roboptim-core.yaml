@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: roboptim/roboptim-core.git
+  repository: advrhumanoids/roboptim-core.git
   tag: master
   recursive: true
 

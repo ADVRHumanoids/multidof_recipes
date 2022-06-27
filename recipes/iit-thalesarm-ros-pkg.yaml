@@ -1,0 +1,6 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-thalesarm-ros-pkg.git
+  tag: master
+  

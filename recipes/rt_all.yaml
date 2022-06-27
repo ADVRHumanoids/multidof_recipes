@@ -1,3 +1,9 @@
 depends: 
   - ec_xbot2_client
   - xbot2_examples
+
+depends_if:
+  binary_gen:
+    - xbot_env
+    - xbot2_desktop_full
+
