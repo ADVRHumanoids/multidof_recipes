@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: humanoid-path-planner/hpp-fcl.git
+  recursive: true
+  tag: master
+  
+build:
+  type: cmake
+  args:
+    - -DBUILD_PYTHON_INTERFACE=OFF
+    - -BUILD_TESTING=OFF
+
