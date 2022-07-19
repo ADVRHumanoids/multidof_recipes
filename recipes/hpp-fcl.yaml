@@ -9,5 +9,5 @@ build:
   type: cmake
   args:
     - -DBUILD_PYTHON_INTERFACE=OFF
-    - -BUILD_TESTING=OFF
+    - -DBUILD_TESTING=OFF
 

@@ -3,3 +3,11 @@ clone:
   server: github.com
   repository: ADVRHumanoids/horizon
   tag: devel
+  
+build:
+  type: cmake
+  target: all
+  cmakelists: horizon/cpp
+  
+depends:
+  - casadi_kin_dyn
