@@ -1,9 +1,9 @@
 clone:
   type: git
   server: github.com
-  repository: humanoid-path-planner/hpp-fcl.git
+  repository: ADVRHumanoids/hpp-fcl.git
   recursive: true
-  tag: master
+  tag: witness_fix
   
 build:
   type: cmake
