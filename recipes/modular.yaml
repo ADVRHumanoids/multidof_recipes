@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/modular.git
+  tag: er_concert
+
+build:
+  type: custom
+  cmd:
+    - cd {srcdir} && pip install -e .
