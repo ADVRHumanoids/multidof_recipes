@@ -5,9 +5,9 @@ Collection of forest recipes for multidof's software
 ```
 [sudo] pip3 install hhcm-forest
 mkdir my_workspace && cd my_workspace
-forest --init
+forest init
 source setup.bash
-forest --add-recipes git@github.com:ADVRHumanoids/multidof_recipes.git master --update
+forest add-recipes git@github.com:ADVRHumanoids/multidof_recipes.git --tag master
 forest <recipe-name> -j 4 
 ```
 
