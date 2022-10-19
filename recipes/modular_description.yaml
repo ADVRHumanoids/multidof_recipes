@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/modular_description.git
+  tag: master
+  ros_src: true
+
+depends:
+  - modular
+
