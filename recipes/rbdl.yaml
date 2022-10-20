@@ -3,6 +3,8 @@ clone:
   server: github.com
   repository: advrhumanoids/rbdl.git
   tag: v250-fix
+  tag_if:
+    experimental: experimental
 
 build:
   type: cmake
