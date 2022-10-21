@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-repair-ros-pkg.git
+  tag: co_design
+  
+build:
+  type: cmake
