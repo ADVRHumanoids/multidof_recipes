@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: advrhumanoids/iit-repair-ros-pkg.git
   tag: co-design
+  ros_src: true
   
 build:
   type: cmake

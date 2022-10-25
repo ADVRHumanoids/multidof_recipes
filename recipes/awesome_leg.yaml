@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: advrhumanoids/awesome_leg.git
   tag: pholus
+  ros_src: true
   
 build:
   type: cmake
