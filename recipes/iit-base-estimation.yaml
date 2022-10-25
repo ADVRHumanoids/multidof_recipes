@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/base_estimation
+  tag: main
+  ros_src: true
+  
+build:
+  type: cmake
