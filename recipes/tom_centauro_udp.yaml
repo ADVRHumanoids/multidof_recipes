@@ -1,0 +1,9 @@
+clone:
+  type: git
+  tag: demo2022
+  server: github.com
+  repository: advrhumanoids/TomCentauroUDP.git
+
+build:
+  type: cmake
+  
