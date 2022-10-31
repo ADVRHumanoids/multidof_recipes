@@ -8,6 +8,3 @@ clone:
 build:
   type: cmake
 
-depends:
-  - iit-base-estimation
-
