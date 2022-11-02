@@ -12,4 +12,6 @@ build:
     - -DWITH_OSQP=1
     - -DWITH_QPOASES=1
     - -DWITH_LAPACK=1
+    - -DWITH_PYTHON=1
+    - -DWITH_PYTHON3=1
 

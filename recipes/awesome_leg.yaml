@@ -7,6 +7,3 @@ clone:
   
 build:
   type: cmake
-
-depends:
-
