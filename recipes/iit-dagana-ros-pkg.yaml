@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-dagana-ros-pkg.git
+  tag: master
+  ros_src: true
+  
+
