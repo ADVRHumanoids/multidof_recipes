@@ -1,9 +1,10 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular_description.git
+  repository: advrhumanoids/concert_description.git
   tag: master
   ros_src: true
+  recursive: true
 
 depends:
   - modular

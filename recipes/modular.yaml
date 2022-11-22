@@ -1,8 +1,9 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular.git
-  tag: er_concert
+  repository: advrhumanoids/modular_hhcm.git
+  tag: master
+  recursive: true
 
 build:
   type: custom
