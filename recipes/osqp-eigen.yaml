@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: robotology/osqp-eigen.git
+  tag: master
+
+build:
+  type: cmake
+
+depends: [osqp]
