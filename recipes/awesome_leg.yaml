@@ -7,3 +7,6 @@ clone:
   
 build:
   type: cmake
+  
+depends: 
+  - awesome_utils
