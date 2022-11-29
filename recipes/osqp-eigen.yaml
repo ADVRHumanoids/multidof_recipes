@@ -7,4 +7,3 @@ clone:
 build:
   type: cmake
 
-depends: [osqp]
