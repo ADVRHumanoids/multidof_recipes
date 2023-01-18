@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/base_estimation.git
+  tag: main
+  
+build:
+  type: cmake
