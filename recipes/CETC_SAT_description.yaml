@@ -2,6 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/CETC_SAT_description.git
+
   tag: main
   ros_src: false
   

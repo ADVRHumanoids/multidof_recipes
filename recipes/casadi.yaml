@@ -9,7 +9,7 @@ clone:
 build:
   type: cmake
   args:
-    - -DWITH_OSQP=0
+    - -DWITH_OSQP=1
     - -DWITH_QPOASES=1
     - -DWITH_LAPACK=1
     - -DWITH_PYTHON=1

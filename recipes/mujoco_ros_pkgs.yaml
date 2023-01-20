@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: AndPatr/mujoco_ros_pkgs.git
+  tag: noetic-devel
+
+build:
+  type: cmake
