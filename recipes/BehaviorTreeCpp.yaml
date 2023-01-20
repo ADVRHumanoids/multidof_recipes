@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: AndPatr/BehaviorTree.CPP.git
+  tag: v3.8
+
+build:
+  type: cmake
+
