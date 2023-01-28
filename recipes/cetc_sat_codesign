@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/cetc_sat_codesign.git
+  tag: main
+  
+build:
+  type: cmake
