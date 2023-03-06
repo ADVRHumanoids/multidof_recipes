@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-repair-ros-pkg.git
-  tag: co-design
+  tag: softhand_integration
   ros_src: true
   
 build:
