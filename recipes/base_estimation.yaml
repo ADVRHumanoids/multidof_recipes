@@ -2,12 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/base_estimation.git
-<<<<<<< HEAD
   tag: main
-=======
-  tag: awesome_leg
-  ros_src: true
->>>>>>> 63b2f873d329eb664a6ca39c12108ec5526613f5
-  
+
 build:
   type: cmake
