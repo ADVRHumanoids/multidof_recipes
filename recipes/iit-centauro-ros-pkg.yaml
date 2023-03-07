@@ -2,7 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-centauro-ros-pkg.git
-  tag: master
+  tag: devel
+  tag_if:
+    stable: master
   ros_src: true
   
 build:

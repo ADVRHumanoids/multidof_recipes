@@ -3,4 +3,11 @@ clone:
   server: github.com
   repository: advrhumanoids/iit-thalesarm-ros-pkg.git
   tag: master
+
+build:
+  type: cmake
+  cmakelists: thalesarm_plugins
+
+depends:
+  - xbot2
   

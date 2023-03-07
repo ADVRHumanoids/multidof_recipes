@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/ecat_master_advr.git
-  tag: freeze_test
+  repository: Advanced-Robotics-Facility/ecat-master-advr.git
+  tag: main
 
 pre_build_if:
   binary_gen:

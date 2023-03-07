@@ -1,8 +1,12 @@
 clone:
   type: git
   server: github.com
+<<<<<<< HEAD
   repository: advrhumanoids/CETC_SAT_description.git
 
+=======
+  repository: ADVRHumanoids/CETC_SAT_description.git
+>>>>>>> origin/master
   tag: main
   ros_src: false
   
