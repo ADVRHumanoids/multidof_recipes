@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesio_acceleration_support.git
-  tag: devel
+  tag: acc_ref
   
 build:
   type: cmake

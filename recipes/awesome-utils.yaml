@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: AndPatr/awesome_utils.git
-  tag: main
+  tag: devel
 
 build:
   type: cmake
