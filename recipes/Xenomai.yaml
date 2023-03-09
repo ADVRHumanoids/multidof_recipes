@@ -11,3 +11,6 @@ build:
     - "{srcdir}/configure --enable-pshared --enable-tls --enable-registry --enable-dlopen-libs --enable-async-cancel --enable-smp"
     - make -j {jobs}
     - sudo make install
+    - echo /usr/xenomai/lib/ > xenomai.conf
+    - sudo cp -f xenomai.conf /etc/ld.so.conf.d/
+    - sudo ldconfig
