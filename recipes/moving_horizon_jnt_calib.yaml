@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: AndPatr/concert_jnt_calib.git
+  repository: AndPatr/moving_horizon_jnt_calib.git
   tag: main
 
 build:
@@ -17,5 +17,5 @@ build:
       - -DPYTHON_VERSION=2
 
 depends: 
-  - concert_description
+  - awesome-utils
 
