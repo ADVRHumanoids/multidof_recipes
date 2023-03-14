@@ -2,9 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: devel
-  tag_if: 
-    experimental: no_jm
+  tag: no_jm
 
 pre_build_if:
   binary_gen:
