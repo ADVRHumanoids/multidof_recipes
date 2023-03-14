@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: advrhumanoids/iit-cogimon-ros-pkg.git
   tag: xbot2
+  ros_src: true
   
 build:
   type: cmake

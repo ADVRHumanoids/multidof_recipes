@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/SoftHand-Plugin
+  tag: repair
+  ros_src: true
+  
+
