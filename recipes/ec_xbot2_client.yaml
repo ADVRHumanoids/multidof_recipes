@@ -13,6 +13,7 @@ build:
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
+      - -DUSE_ECAT_CORE=ON
 
 post_build_if:
   binary_gen:
