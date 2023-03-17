@@ -10,3 +10,6 @@ build:
   type: custom
   cmd:
     - pip install -e {srcdir}
+
+depends:
+  - xacro
