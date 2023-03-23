@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/capability_framework.git
+  tag: main
+
+build:
+  type: custom
+  cmd:
+    - pip install -e {srcdir}
+
+depends:
+  - albero-api

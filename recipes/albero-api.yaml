@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/albero-api.git
+  tag: main
+
+build:
+  type: custom
+  cmd:
+    - pip install -e {srcdir}
+
+depends: 
+  - albero_msgs

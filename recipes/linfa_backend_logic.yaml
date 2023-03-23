@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/linfa_backend_logic.git
+  tag: main
+  ros_src: true
+
+build:
+  type: custom
+  cmd:
+    - pip install -e {srcdir}
+
+depends:
+  - capability_framework
