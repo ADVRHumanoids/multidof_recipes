@@ -11,3 +11,4 @@ build:
 
 depends:
   - albero-api
+  - moveit-commander   # for collision
