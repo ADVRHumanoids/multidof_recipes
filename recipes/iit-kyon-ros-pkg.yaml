@@ -1,0 +1,7 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-kyon-ros-pkg.git
+  tag: main
+  ros_src: true
+  
