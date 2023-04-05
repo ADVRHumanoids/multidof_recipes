@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/cartesio_planning.git
+  tag: include_headers
+  
+build:
+  type: cmake
+  
+
