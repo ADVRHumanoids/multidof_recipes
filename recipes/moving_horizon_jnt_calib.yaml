@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: AndPatr/awesome_utils.git
-  tag: devel
+  repository: AndPatr/moving_horizon_jnt_calib.git
+  tag: main
 
 build:
   type: cmake
@@ -15,16 +15,7 @@ build:
       - -DPYBIND11_PYTHON_VERSION=2
       - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
       - -DPYTHON_VERSION=2
-    model_iface:
-      - -DWITH_MODEL_INTERFACE=TRUE
-    with_xbot2:
-      - -DWITH_XBOT2=TRUE
-    with_pybinds:
-      - -DWITH_PYTHON=TRUE
-    with_docs:
-      - -DWITH_DOCS=TRUE
-    with_tests:
-      - -DBUILD_TESTS=TRUE
+
 depends: 
-  - pybind11
-  - pinocchio
+  - awesome-utils
+
