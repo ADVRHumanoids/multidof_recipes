@@ -1,10 +1,12 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular.git
-  tag: er_concert
+  repository: advrhumanoids/modular_hhcm.git
+  tag: master
+  recursive: true
+  ros_src: true
 
 build:
   type: custom
   cmd:
-    - pip install {srcdir}
+    - pip install -e {srcdir}
