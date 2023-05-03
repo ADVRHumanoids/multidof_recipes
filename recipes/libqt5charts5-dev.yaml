@@ -1,0 +1,3 @@
+clone:
+  type: deb
+  debname: libqt5charts5-dev

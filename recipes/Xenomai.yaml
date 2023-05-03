@@ -14,3 +14,6 @@ build:
     - sudo touch /etc/ld.so.conf.d/xenomai.conf
     - "sudo sh -c 'echo /usr/xenomai/lib/ > /etc/ld.so.conf.d/xenomai.conf'"
     - sudo ldconfig
+    - git clone https://github.com/nolange/cmake_xenomai.git {srcdir}/cmake_xenomai
+    - sudo mkdir -p /usr/xenomai/lib/cmake/xenomai
+    - sudo {srcdir}/cmake_xenomai/config/install_cmakeconfig.sh --version 3.2.1 -- /usr/xenomai/lib/cmake/xenomai

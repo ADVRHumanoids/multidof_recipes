@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/albero_plugins.git
-  tag: concert_stuff
+  repository: advrhumanoids/albero_devices.git
+  tag: v0.2-albero
 
 build:
   type: cmake
@@ -13,8 +13,4 @@ build:
       - -DXBOT2_ENABLE_XENO=ON
 
 depends:
-  - xbot2
-  - cartesian_interface
-  - cartesio-integration
   - ec_xbot2_client
-  - albero_msgs

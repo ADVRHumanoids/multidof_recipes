@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/albero_msgs.git
+  tag: master
+  ros_src: true
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/robot_monitoring.git
-  tag: xbot2-ec
+  tag: xbot2-2.10
 
 pre_build_if:
   binary_gen:
@@ -19,5 +19,6 @@ post_build_if:
 depends: 
   - RobotInterfaceROS
   - ec_msgs
+  - libqt5charts5-dev
 
 

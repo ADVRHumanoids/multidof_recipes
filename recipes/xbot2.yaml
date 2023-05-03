@@ -28,6 +28,7 @@ depends:
   - XBotInterface
   - matlogger2
   - xbot_msgs
+  - srdfdom
 
 depends_if:
   xeno:

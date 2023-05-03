@@ -1,9 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular_hhcm.git
-  tag: master
-  recursive: true
+  repository: ADVRHumanoids/linfa_backend_logic.git
+  tag: main
   ros_src: true
 
 build:
@@ -12,4 +11,4 @@ build:
     - pip install -e {srcdir}
 
 depends:
-  - xacro
+  - capability_framework
