@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/estimation_utils.git
+  tag: master
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+  args_if:
+    xeno:
+      - -DXBOT2_ENABLE_XENO=ON

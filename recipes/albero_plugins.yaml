@@ -8,6 +8,8 @@ build:
   type: cmake
   args:
     - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    - -DALBERO_PLUGINS_COMPILE_DIGITAL_IO=OFF
+    - -DALBERO_PLUGINS_COMPILE_IO_LINK=OFF
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
@@ -18,3 +20,4 @@ depends:
   - cartesio-integration
   - ec_xbot2_client
   - albero_msgs
+  - estimation_utils
