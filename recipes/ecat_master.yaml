@@ -13,11 +13,11 @@ build:
   args:
     - -DBUILD_TOOLS=OFF
     - -DCMAKE_BUILD_TYPE=Release
+    - -DBUILD_TOOLS=ON
   args_if:
     xeno:
       - -DCMAKE_USE_XENOMAI=ON
       - -DENABLE_XENO=ON
-      - -DBUILD_TOOLS=ON
 
 post_build_if:
   binary_gen:
