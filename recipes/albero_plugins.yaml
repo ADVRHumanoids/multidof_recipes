@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_plugins.git
-  tag: concert_stuff
+  tag: start_stop_filter_agnostic
 
 build:
   type: cmake
