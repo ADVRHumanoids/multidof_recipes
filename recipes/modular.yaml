@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular_hhcm.git
-  tag: master
+  repository: advrhumanoids/modular.git
+  tag: alberobotics
   recursive: true
   ros_src: true
 
