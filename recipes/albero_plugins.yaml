@@ -17,7 +17,7 @@ build:
 depends:
   - xbot2
   - cartesian_interface
-  - cartesio-integration
+  - cartesio_integration
   - ec_xbot2_client
   - albero_msgs
   - estimation_utils
