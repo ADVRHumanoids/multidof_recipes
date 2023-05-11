@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/modular.git
-  tag: alberobotics
+  tag: tapullo_pino
   recursive: true
   ros_src: true
 
