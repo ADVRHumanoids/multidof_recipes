@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: marcoruzzon/git_utils.git
+  tag: master
+  
+build:
+  type: custom
+  cmd:
+    - ln -s {srcdir}/scripts/* {installdir}/bin
