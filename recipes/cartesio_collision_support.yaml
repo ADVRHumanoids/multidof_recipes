@@ -6,6 +6,8 @@ clone:
   
 build:
   type: cmake
+  args:
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
   args_if:
     ubuntu_release >= 20.04: 
       - -DPYBIND11_PYTHON_VERSION=3
@@ -15,6 +17,10 @@ build:
       - -DPYBIND11_PYTHON_VERSION=2
       - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
       - -DPYTHON_VERSION=2
+
+post_build_if:  
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
       
 depends:
   - cartesian_interface

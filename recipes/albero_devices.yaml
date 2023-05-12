@@ -8,9 +8,14 @@ build:
   type: cmake
   args:
     - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
+
+post_build_if:  
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
 
 depends:
   - ec_xbot2_client

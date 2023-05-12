@@ -10,9 +10,14 @@ build:
     - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     - -DALBERO_PLUGINS_COMPILE_DIGITAL_IO=OFF
     - -DALBERO_PLUGINS_COMPILE_IO_LINK=OFF
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
+
+post_build_if:  
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
 
 depends:
   - xbot2

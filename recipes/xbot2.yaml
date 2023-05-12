@@ -12,6 +12,7 @@ build:
   type: cmake
   args:
     - -DXBOT2_DEBUG_PRINTS=TRUE
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
   args_if:
     xeno: 
       - -DXBOT2_ENABLE_XENO=ON
@@ -21,6 +22,9 @@ post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
+  
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
 
 depends: 
   - XBotInterface

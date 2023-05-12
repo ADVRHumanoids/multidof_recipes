@@ -10,11 +10,16 @@ pre_build_if:
 
 build:
   type: cmake
+  args:
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
 post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
+
 
 depends: 
   - rbdl

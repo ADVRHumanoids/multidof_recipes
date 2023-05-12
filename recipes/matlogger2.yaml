@@ -12,6 +12,8 @@ build:
   type: cmake
   args:
     - -DCPACK_PACKAGING_INSTALL_PREFIX=/opt/xbot
+    - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+  
   args_if:
     ubuntu_release >= 20.04: 
       - -DPYBIND11_PYTHON_VERSION=3
@@ -26,6 +28,8 @@ post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
 
 depends: 
   - pybind11

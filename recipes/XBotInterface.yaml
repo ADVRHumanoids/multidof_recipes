@@ -18,6 +18,7 @@ build:
       - -DPYBIND11_PYTHON_VERSION=3
       - -DPYTHON_EXECUTABLE=$(readlink -f $(which python3))
       - -DPYTHON_VERSION=3
+      - -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
     ubuntu_release < 20.04: 
       - -DPYBIND11_PYTHON_VERSION=2
       - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
@@ -29,6 +30,8 @@ post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
 
 depends: 
   - matlogger2
