@@ -7,4 +7,5 @@ clone:
 build:
   type: custom
   cmd:
+    - mkdir {installdir}/bin | true
     - ln -s {srcdir}/scripts/* {installdir}/bin
