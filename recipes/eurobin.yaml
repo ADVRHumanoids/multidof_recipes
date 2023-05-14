@@ -4,3 +4,7 @@ clone:
   repository: advrhumanoids/eurobin_demo.git
   ros_src: true
   tag: master
+  
+depends:
+  - iit-centauro-ros-pkg
+  - cartesio_planning
