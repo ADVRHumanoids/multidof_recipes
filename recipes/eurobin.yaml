@@ -1,6 +1,6 @@
 clone: 
   type: git
   server: github.com
-  repository: advrhumanoids/eurobin_grasp_box.git
+  repository: advrhumanoids/eurobin_demo.git
   ros_src: true
   tag: master
