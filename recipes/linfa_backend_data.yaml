@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/linfa_backend_data.git
-  tag: v1.0.0-alpha.14
+  tag: v1.0.0-alpha.13
   
 build:
   type: custom
