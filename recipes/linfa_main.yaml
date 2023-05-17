@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/linfa_main.git
+  tag: v1.0.0-alpha.14
+  
+build:
+  type: custom
+  cmd:
+    - cd {srcdir} && npm ci
