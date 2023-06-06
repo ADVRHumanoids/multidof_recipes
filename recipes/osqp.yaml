@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: oxfordcontrol/osqp.git
-  tag: master
+  tag: release-0.6.3
   tag_if: 
     casadi_stable: release-0.6.3
   recursive: true
