@@ -4,8 +4,9 @@ clone:
   repository: advrhumanoids/modular_hhcm.git
   tag: master
   recursive: true
+  ros_src: true
 
 build:
   type: custom
   cmd:
-    - pip install {srcdir}
+    - pip install -e {srcdir}
