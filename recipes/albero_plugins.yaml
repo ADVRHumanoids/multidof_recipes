@@ -21,8 +21,8 @@ post_build_if:
 
 depends:
   - xbot2
+  - albero_interfaces
   - cartesian_interface
   - cartesio_integration
-  - ec_xbot2_client
   - albero_msgs
   - estimation_utils
