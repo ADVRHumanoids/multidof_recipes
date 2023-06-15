@@ -19,3 +19,4 @@ post_build_if:
 
 depends:
   - ec_xbot2_client
+  - albero_interfaces
