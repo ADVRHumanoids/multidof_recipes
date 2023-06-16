@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/estimation_utils.git
+  tag: main
+  
+build:
+  type: cmake
