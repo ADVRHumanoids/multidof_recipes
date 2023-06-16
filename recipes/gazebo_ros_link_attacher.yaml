@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/gazebo_ros_link_attacher.git
+  tag: melodic-devel
+  
+build:
+  type: cmake
