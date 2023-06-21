@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/linfa_rosnode_cpp.git
+  tag: no_state_machine
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+post_build_if:  
+  vscode:
+    - git clone --branch forest git@github.com:marcoruzzon/vscode_settings.git {srcdir}/.vscode
