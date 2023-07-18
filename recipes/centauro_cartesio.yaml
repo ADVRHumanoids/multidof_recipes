@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/centauro_cartesio.git
-  tag: 2.0-devel
+  tag: concert
 
   
 build:
