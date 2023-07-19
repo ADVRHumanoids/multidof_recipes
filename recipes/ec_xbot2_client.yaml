@@ -10,9 +10,12 @@ pre_build_if:
 
 build:
   type: cmake
+  args:
+    - -DDEB_INSTALL_PREFIX=/opt/xbot
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
+   
 
 post_build_if:
   binary_gen:
