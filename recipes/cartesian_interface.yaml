@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/cartesianinterface.git
   tag: 2.0-devel
   tag_if:
-    stable: 2.0-master
+    stable: v2.1.0
 
 pre_build_if:
   binary_gen:
