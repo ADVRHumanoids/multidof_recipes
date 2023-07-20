@@ -3,6 +3,8 @@ clone:
   server: github.com
   repository: advrhumanoids/OpenSoT.git
   tag: devel
+  tag_if:
+    stable: v3.2.0
 
 pre_build_if:
   binary_gen:
