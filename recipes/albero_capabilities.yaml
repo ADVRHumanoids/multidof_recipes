@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/albero_capabilities.git
+  tag: master
+
+build:
+  type: custom
+  cmd:
+    - pip install -e {srcdir}

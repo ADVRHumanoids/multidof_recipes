@@ -1,0 +1,7 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/concert_demo.git
+  tag: linfa
+  ros_src: true
+  recursive: true

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_plugins.git
-  tag: v2.10
+  tag: test_merge
 
 build:
   type: cmake

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesian-impedance-controller.git
-  tag: update-cmake
+  tag: force_limits
 
 build:
   type: cmake
