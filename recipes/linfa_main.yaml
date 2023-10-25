@@ -12,5 +12,4 @@ build:
     - cd {srcdir} && npm ci
 
 depends:
-  - web-video-server
-  - rosbridge-server
+  - linfa_backend_data
