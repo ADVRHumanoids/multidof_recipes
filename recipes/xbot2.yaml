@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: v2.11.1
+  tag: v2.10
 
 pre_build_if:
   binary_gen:
