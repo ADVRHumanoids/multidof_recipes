@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/XBotInterface.git
   tag: devel
   tag_if:
-    stable: master
+    stable: v2.2.0
     experimental: experimental
 
 pre_build_if:
