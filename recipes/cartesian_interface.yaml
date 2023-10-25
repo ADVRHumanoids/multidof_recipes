@@ -4,8 +4,8 @@ clone:
   repository: advrhumanoids/cartesianinterface.git
   tag: force_limits
   tag_if:
-    stable: 2.0-master
-
+    stable: force_limits
+    
 pre_build_if:
   binary_gen:
     - rm -rf *.deb
