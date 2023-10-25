@@ -8,3 +8,7 @@ build:
   type: custom
   cmd:
     - cd {srcdir} && npm ci
+
+depends:
+  - web-video-server
+  - rosbridge-server
