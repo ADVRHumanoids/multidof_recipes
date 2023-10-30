@@ -11,3 +11,4 @@ build:
 
 depends: 
   - albero_msgs
+  - cartesian_interface
