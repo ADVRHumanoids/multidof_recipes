@@ -3,9 +3,9 @@ clone:
   server: github.com
   repository: advrhumanoids/linfa_main.git
   tag: v1.0.0-alpha.4.1
-  tag_if: 
-    experimental: 20231024_CONCERT
-  
+  tag_if:
+    experimental: development
+
 build:
   type: custom
   cmd:
