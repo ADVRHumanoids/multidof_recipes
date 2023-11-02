@@ -13,3 +13,4 @@ build:
 
 depends:
   - linfa_backend_data
+  - linfa_backend_logic
