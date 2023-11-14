@@ -1,0 +1,30 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/ecat_master_advr.git
+  tag: feature/circulo9
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args:
+    - -DBUILD_TOOLS=ON
+    - -DCMAKE_BUILD_TYPE=Release
+  args_if:
+    xeno:
+      - -DCMAKE_USE_XENOMAI=ON
+      - -DENABLE_XENO=ON
+      - -DBUILD_TOOLS=ON
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends:
+  - soem
+  - cppzmq
+  - protobuf

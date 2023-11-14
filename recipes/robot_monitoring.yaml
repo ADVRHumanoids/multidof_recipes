@@ -3,6 +3,8 @@ clone:
   server: github.com
   repository: advrhumanoids/robot_monitoring.git
   tag: xbot2-ec
+  tag_if:
+    stable: v1.0.0
 
 pre_build_if:
   binary_gen:

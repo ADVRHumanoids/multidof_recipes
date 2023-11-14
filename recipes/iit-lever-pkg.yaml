@@ -1,25 +1,20 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/ModelInterfaceRBDL.git
-  tag: devel
-  tag_if:
-    stable: v1.1.10
+  repository: advrhumanoids/iit-lever-pkg.git
+  tag: master
+  ros_src: true
+  
+build:
+  type: cmake
+  target: all
 
 pre_build_if:
   binary_gen:
     - rm -rf *.deb
 
-build:
-  type: cmake
-
 post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
-
-depends: 
-  - rbdl
-  - XBotInterface
-
 

@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/xbot2.git
   tag: devel
   tag_if: 
-    experimental: v2.10
+    stable: v2.11.1
 
 pre_build_if:
   binary_gen:

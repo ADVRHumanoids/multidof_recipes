@@ -1,0 +1,17 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/circulo9_xbot2_device.git
+  tag: v1.0
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    - -DUSE_ECAT_CORE=ON
+  args_if:
+    xeno:
+      - -DXBOT2_ENABLE_XENO=ON
+
+depends:
+  - ec_xbot2_client
