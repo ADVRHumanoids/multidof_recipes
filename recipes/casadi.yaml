@@ -15,6 +15,7 @@ build:
     # for python bindings (swig required)
     - -DWITH_PYTHON=1
     - -DWITH_PYTHON3=1
+    - -DPYTHON_PREFIX={installdir}/lib/python3/dist-packages
     
 depends:
   - osqp
