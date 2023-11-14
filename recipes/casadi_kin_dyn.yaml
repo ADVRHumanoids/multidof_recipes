@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/casadi_kin_dyn.git
-  tag: master
+  tag: pypi
 
 build:
   type: cmake
