@@ -12,6 +12,9 @@ build:
     - -DWITH_OSQP=1
     - -DWITH_QPOASES=1
     - -DWITH_LAPACK=1
+    # for python bindings (swig required)
+    - -DWITH_PYTHON=1
+    - -DWITH_PYTHON3=1
     
 depends:
   - osqp
