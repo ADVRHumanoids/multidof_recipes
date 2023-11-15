@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/modular.git
-  tag: tapullo_pino
+  tag: pino/linfization
   recursive: true
   ros_src: true
 
