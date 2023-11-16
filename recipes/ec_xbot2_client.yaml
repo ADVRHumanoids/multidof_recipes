@@ -25,4 +25,4 @@ post_build_if:
 
 depends:
   - xbot2
-  - ecat_master
+  - ecat-master-advr
