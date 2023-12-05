@@ -1,0 +1,7 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-inail2arm-ros-pkg.git
+  ros_src: true
+  tag: master
+  
