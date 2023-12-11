@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/OpenSoT.git
   tag: devel
   tag_if:
-    stable: v3.2.0
+    stable: v3.3.0
 
 pre_build_if:
   binary_gen:
