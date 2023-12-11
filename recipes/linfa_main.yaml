@@ -4,6 +4,7 @@ clone:
   repository: advrhumanoids/linfa_main.git
   tag: v1.0.0-alpha.4.4
   tag_if:
+    development: development
     experimental: 20231024_CONCERT
 
 build:

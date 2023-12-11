@@ -3,5 +3,8 @@ clone:
   server: github.com
   repository: advrhumanoids/linfa_ros.git
   tag: master
+  tag_if:
+    development: development
+    experimental: experimental
   ros_src: true
   recursive: true

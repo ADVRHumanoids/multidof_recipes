@@ -4,14 +4,20 @@ clone:
   repository: advrhumanoids/linfa_backend_data.git
   tag: v1.0.0-alpha.4.4
   tag_if:
-    experimental: 20231024_CONCERT
-  
+    development: development
+    experimental: development
+
 build:
   type: custom
   cmd:
     - cd {srcdir} && npm ci
 
 depends:
-  - web-video-server
-  - rosbridge-server
   - linfa_ros
+  - linfa_main
+  - linfa_backend_logic
+
+depends_if:
+  experimental:
+    - web-video-server
+    - rosbridge-server
