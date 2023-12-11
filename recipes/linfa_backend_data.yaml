@@ -10,14 +10,18 @@ clone:
 build:
   type: custom
   cmd:
-    - cd {srcdir} && npm ci
+    - cd {srcdir}
+    - ${'npm ci' if mode('development') or mode('experimental') else 'npm ci --omit=dev && npm run build:swc'}
 
 depends:
   - linfa_ros
-  - linfa_main
   - linfa_backend_logic
+  - dumb-init
 
 depends_if:
+  development:
+  - linfa_main
   experimental:
+  - linfa_main
     - web-video-server
     - rosbridge-server
