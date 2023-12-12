@@ -2,7 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/estimation_utils.git
-  tag: main
+  tag: master
+  tag_if:
+    ros2: ros2
   
 build:
   type: cmake
