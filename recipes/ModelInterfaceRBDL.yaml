@@ -5,6 +5,7 @@ clone:
   tag: devel
   tag_if:
     stable: v1.1.10
+    ros2: ros2
 
 pre_build_if:
   binary_gen:

@@ -6,6 +6,7 @@ clone:
   tag_if:
     stable: v2.3.0
     experimental: experimental
+    ros2: ros2
 
 pre_build_if:
   binary_gen:
