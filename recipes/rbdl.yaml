@@ -5,6 +5,7 @@ clone:
   tag: devel
   tag_if:
     experimental: experimental
+    ros2: ros2
 
 build:
   type: cmake
