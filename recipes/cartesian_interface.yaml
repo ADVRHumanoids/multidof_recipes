@@ -37,4 +37,5 @@ depends:
   - OpenSoT
   - RobotInterfaceROS
   - ReflexxesTypeII
+  - estimation_utils
 
