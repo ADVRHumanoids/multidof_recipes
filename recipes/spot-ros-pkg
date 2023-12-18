@@ -1,0 +1,7 @@
+clone:
+  type: git
+  server: github.com
+  repository: FrancescoRuscelli/spot-ros-pkg.git
+  tag: master
+  ros_src: true
+  
