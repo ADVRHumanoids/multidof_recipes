@@ -24,6 +24,7 @@ depends:
   - realsense_gazebo_description
   - velodyne_description
   - velodyne_gazebo_plugins
+  - iit-dagana-ros-pkg
 
 depends_if:
   xacro_gen:

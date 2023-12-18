@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/cartesian-impedance-controller.git
+  tag: concert_stuff
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+depends:
+  - xbot2
+  - cartesian_interface

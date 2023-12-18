@@ -1,13 +1,16 @@
 clone:
   type: git
-  server: github.com
-  repository: alessiomargan/xenomai.git
-  tag: v3.1_cmake
+  server: source.denx.de
+  repository: Xenomai/xenomai.git
+  tag: v3.2.1
   
 build:
   type: custom
   cmd:
     - cd {srcdir} && ./scripts/bootstrap
-    - "{srcdir}/configure --enable-pshared --enable-tls --enable-registry --enable-dlopen-libs --enable-async-cancel --enable-smp"
+    - "{srcdir}/configure --enable-pshared --enable-tls --enable-dlopen-libs --enable-async-cancel --enable-smp"
     - make -j {jobs}
     - sudo make install
+    - sudo touch /etc/ld.so.conf.d/xenomai.conf
+    - "sudo sh -c 'echo /usr/xenomai/lib/ > /etc/ld.so.conf.d/xenomai.conf'"
+    - sudo ldconfig

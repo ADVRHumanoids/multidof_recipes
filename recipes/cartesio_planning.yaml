@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/cartesio_planning.git
+  tag: devel
+  
+build:
+  type: cmake
+  
+depends:
+  - casadi
+  - cartesio_acceleration_support
+  
