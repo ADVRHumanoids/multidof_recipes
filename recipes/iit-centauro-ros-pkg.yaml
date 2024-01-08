@@ -5,11 +5,14 @@ clone:
   tag: devel
   tag_if:
     stable: master
-  ros_src: true
   
 build:
   type: cmake
-  target: all
+  cmakelists:
+    - centauro_urdf: centauro_urdf
+    - centauro_srdf: centauro_srdf
+    - centauro_gazebo: centauro_gazebo
+    - centauro_config: centauro_config
 
 pre_build_if:
   binary_gen:
