@@ -3,9 +3,4 @@ clone:
   server: github.com
   repository: advrhumanoids/xbot2_conda.git
   tag: master
-  
-build:
-  type: custom
-  cmd: 
-    - echo {srcdir}
-    - ls {srcdir}
+
