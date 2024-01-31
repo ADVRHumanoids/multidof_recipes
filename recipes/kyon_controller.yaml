@@ -11,3 +11,4 @@ build:
 depends:
   - horizon
   - base_estimation
+  - phase_manager
