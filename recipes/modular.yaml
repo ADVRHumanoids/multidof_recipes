@@ -3,6 +3,9 @@ clone:
   server: github.com
   repository: advrhumanoids/modular.git
   tag: pino/linfization
+  tag_if:
+    development: feat/linfization
+    experimental: feat/linfization_with_sessions
   recursive: true
   ros_src: true
 
@@ -13,3 +16,11 @@ build:
 
 depends:
   - xacro
+
+depends_if:
+  development:
+  - concert_description
+  - iit-dagana-ros-pkg
+  experimental:
+  - concert_description
+  - iit-dagana-ros-pkg
