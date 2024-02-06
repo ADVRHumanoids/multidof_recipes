@@ -1,0 +1,7 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/concert_resources.git
+  tag: master
+  ros_src: true
+  recursive: true

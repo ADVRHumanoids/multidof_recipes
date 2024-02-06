@@ -19,8 +19,8 @@ depends:
 
 depends_if:
   development:
-  - concert_description
+  - concert_resources
   - iit-dagana-ros-pkg
   experimental:
-  - concert_description
+  - concert_resources
   - iit-dagana-ros-pkg
