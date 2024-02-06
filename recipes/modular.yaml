@@ -16,11 +16,3 @@ build:
 
 depends:
   - xacro
-
-depends_if:
-  development:
-  - concert_resources
-  - iit-dagana-ros-pkg
-  experimental:
-  - concert_resources
-  - iit-dagana-ros-pkg
