@@ -16,4 +16,5 @@ depends:
   - xbot2
   - cartesian_interface
   - cartesio-integration
-  - ec_xbot2_client
+  - ec_xbot2_interfaces
+  - estimation_utils
