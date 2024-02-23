@@ -8,5 +8,6 @@ build:
   type: cmake
   
 depends:
+  - gazebo_ros
   - realsense2_description
   - camera_info_manager
