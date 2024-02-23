@@ -5,7 +5,7 @@ clone:
   tag: pino/linfization
   tag_if:
     development: feat/linfization
-    experimental: feat/linfization_with_sessions
+    experimental: feat/linfization
   recursive: true
   ros_src: true
 
