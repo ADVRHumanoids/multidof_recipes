@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/matlogger2.git
   tag: devel
   tag_if:
-    stable: v1.5.0
+    stable: v1.6.0
 
 pre_build_if:
   binary_gen:
