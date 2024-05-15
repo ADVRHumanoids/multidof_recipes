@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: opencv/opencv.git
+  tag: 4.x
+
+build:
+  type: cmake
+  args_if:
+    cuda:
+      - -DWITH_CUDA=ON
+      - -DOPENCV_EXTRA_MODULES_PATH={srcdir}/../opencv_contrib/modules
+   
+depends_if:
+  cuda:
+    - opencv_contrib
