@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/force_estimation_plugin.git
+  tag: master
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+  
+depends:
+  - estimation_utils
+  - xbot2
+  - cartesian_interface
+  - matlogger2
