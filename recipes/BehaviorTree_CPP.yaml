@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: BehaviorTree/BehaviorTree.CPP.git
+  tag: master
+
+build:
+  type: cmake
