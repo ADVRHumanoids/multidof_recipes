@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_plugins.git
-  tag: concert_stuff
+  tag: main
 
 build:
   type: cmake
@@ -15,6 +15,6 @@ build:
 depends:
   - xbot2
   - cartesian_interface
-  - cartesio-integration
+  - cartesio_integration
   - ec_xbot2_interfaces
   - estimation_utils

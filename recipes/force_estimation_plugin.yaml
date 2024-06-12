@@ -6,11 +6,6 @@ clone:
 
 build:
   type: cmake
-  args:
-    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-  
-depends:
-  - estimation_utils
+
+depends: 
   - xbot2
-  - cartesian_interface
-  - matlogger2

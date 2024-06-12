@@ -9,3 +9,8 @@ build:
 
 depends: 
   - BehaviorTree_CPP
+  - albero_plugins
+  - force_estimation_plugin
+  - xbot2
+  - cartesian_interface
+  - xbot_msgs
