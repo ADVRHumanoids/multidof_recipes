@@ -1,12 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/XBotInterface.git
-  tag: devel
-  tag_if:
-    stable: v2.4.1
-    experimental: experimental
-    ros2: ros2
+  repository: advrhumanoids/xbot2_interface.git
+  tag: master
 
 pre_build_if:
   binary_gen:
@@ -14,17 +10,6 @@ pre_build_if:
 
 build:
   type: cmake
-  args_if:
-    ubuntu_release >= 20.04: 
-      - -DPYBIND11_PYTHON_VERSION=3
-      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python3))
-      - -DPYTHON_VERSION=3
-    ubuntu_release < 20.04: 
-      - -DPYBIND11_PYTHON_VERSION=2
-      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
-      - -DPYTHON_VERSION=2
-    test:
-      - -DXBOTIFC_BUILD_TESTS=ON
 
 post_build_if:
   binary_gen:
@@ -34,5 +19,8 @@ post_build_if:
 depends: 
   - matlogger2
   - pybind11
+  - pinocchio
+  - hpp-fcl
+  - xbot_msgs
 
 
