@@ -3,7 +3,7 @@ clone:
   server: github.com
   repository: ADVRHumanoids/hpp-fcl.git
   recursive: true
-  tag: witness_fix
+  tag: hhcm_working
   
 build:
   type: cmake

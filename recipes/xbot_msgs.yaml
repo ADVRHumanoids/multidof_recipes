@@ -2,9 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot_msgs.git
-  tag: master
-  tag_if:
-    ros2: ros2
+  tag: ros2
 
 pre_build_if:
   binary_gen:

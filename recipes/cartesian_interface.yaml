@@ -2,10 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesianinterface.git
-  tag: 2.0-devel
+  tag: ros2
   tag_if:
-    stable: v2.2.0
-    ros2: ros2
+    stable: ros2
 
 pre_build_if:
   binary_gen:
@@ -16,14 +15,6 @@ build:
   args:
     - -DCARTESIO_COMPILE_EXAMPLES=TRUE
   args_if:
-    ubuntu_release >= 20.04: 
-      - -DPYBIND11_PYTHON_VERSION=3
-      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python3))
-      - -DPYTHON_VERSION=3
-    ubuntu_release < 20.04: 
-      - -DPYBIND11_PYTHON_VERSION=2
-      - -DPYTHON_EXECUTABLE=$(readlink -f $(which python2))
-      - -DPYTHON_VERSION=2
     test:
       - -DCARTESIO_BUILD_TESTS=ON
 
@@ -35,7 +26,6 @@ post_build_if:
 depends: 
   - pybind11
   - OpenSoT
-  - RobotInterfaceROS
   - ReflexxesTypeII
   - estimation_utils
 

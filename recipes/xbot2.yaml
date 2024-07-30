@@ -2,10 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: devel
+  tag: ros2
   tag_if: 
-    stable: v2.12.0
-    ros2: ros2
+    stable: ros2
 
 pre_build_if:
   binary_gen:

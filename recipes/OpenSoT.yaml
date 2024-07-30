@@ -2,10 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/OpenSoT.git
-  tag: devel
-  tag_if:
-    stable: v3.3.0
-    ros2: ros2
+  tag: ros2
 
 pre_build_if:
   binary_gen:
@@ -25,7 +22,5 @@ post_build_if:
 depends: 
   - XBotInterface
   - osqp
-  - matlogger2
-  - fcl
 
 
