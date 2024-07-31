@@ -25,7 +25,7 @@ post_build_if:
     - cp *.deb {config.binary_dir}
 
 depends: 
-  - XBotInterface
+  - xbot2_interface
   - matlogger2
   - xbot_msgs
 
