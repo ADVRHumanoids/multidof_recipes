@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: stack-of-tasks/pinocchio.git
-  tag: master
+  tag: v2.7.1
   recursive: true
 
 
