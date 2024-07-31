@@ -7,3 +7,7 @@ clone:
   
 build:
   type: cmake
+  
+depends:
+  - cartesian_interface
+  - xbot2

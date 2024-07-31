@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_interface.git
+  tag: master
+  
+build:
+  type: cmake
+  
+  
+depends:
+  - pinocchio
+  - hpp-fcl
+  - xbot_msgs
