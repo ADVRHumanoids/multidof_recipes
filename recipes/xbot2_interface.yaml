@@ -15,6 +15,7 @@ build:
   args:
    - -DXBOT2_IFC_BUILD_ROS=OFF
    - -DXBOT2_IFC_BUILD_ROS2=ON
+   - -DCMAKE_CXX_COMPILER=$(which clang++)
   args_if:
     test:
       - -DXBOTIFC_BUILD_TESTS=ON
@@ -28,5 +29,6 @@ depends:
   - matlogger2
   - pybind11
   - pinocchio
+  - xbot_msgs
 
 

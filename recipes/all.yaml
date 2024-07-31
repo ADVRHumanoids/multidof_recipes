@@ -1,8 +1,7 @@
 depends:
   - cartesian_interface
-  - ModelInterfaceRBDL
-  - robot_monitoring
   - xbot2
+  - xbot2_mujoco
 
 depends_if:
   binary_gen:
