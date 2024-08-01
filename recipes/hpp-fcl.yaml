@@ -10,4 +10,5 @@ build:
   args:
     - -DBUILD_PYTHON_INTERFACE=OFF
     - -DBUILD_TESTING=OFF
+    - -DBUILD_SHARED_LIBS=OFF
 
