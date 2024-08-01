@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: stack-of-tasks/pinocchio.git
-  tag: v2.7.1
+  repository: advrhumanoids/pinocchio.git
+  tag: v2.7.1-hhcm
   recursive: true
 
 
