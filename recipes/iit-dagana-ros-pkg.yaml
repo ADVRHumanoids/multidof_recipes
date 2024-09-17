@@ -6,3 +6,7 @@ clone:
   ros_src: true
   
 
+build:
+  type: cmake
+  cmakelists:
+    - dagana_urdf: dagana_urdf

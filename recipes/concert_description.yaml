@@ -6,9 +6,17 @@ clone:
   ros_src: true
   recursive: true
 
+build:
+  type: cmake
+  cmakelists:
+    - concert_resources: concert_resources
+    - concert_gazebo: concert_gazebo
+    - concert_xbot2: concert_xbot2
+    - concert_examples: concert_examples
+
 depends:
   - modular
-  - realsense_gazebo_description
-  - velodyne_description
-  - velodyne_gazebo_plugins
+    #  - realsense_gazebo_description
+    #- velodyne_description
+    #- velodyne_gazebo_plugins
 

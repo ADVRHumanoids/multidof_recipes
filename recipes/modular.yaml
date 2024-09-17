@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/modular_hhcm.git
-  tag: master
+  tag: ros2
   recursive: true
   ros_src: true
 
