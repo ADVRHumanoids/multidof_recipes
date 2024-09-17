@@ -2,9 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-centauro-ros-pkg.git
-  tag: devel
-  tag_if:
-    stable: master
+  tag: ros2
   
 build:
   type: cmake
@@ -24,9 +22,6 @@ post_build_if:
     - cp *.deb {config.binary_dir}
       
 depends:
-  - realsense_gazebo_description
-  - velodyne_description
-  - velodyne_gazebo_plugins
   - iit-dagana-ros-pkg
 
 depends_if:
