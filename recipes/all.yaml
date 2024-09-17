@@ -1,7 +1,8 @@
 depends:
-  - cartesian_interface
   - xbot2
-  - xbot2_mujoco
+  - cartesian_interface
+  - iit-centauro-ros-pkg
+  - concert_description
 
 depends_if:
   binary_gen:
