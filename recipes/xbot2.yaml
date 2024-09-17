@@ -13,8 +13,8 @@ pre_build_if:
 build:
   type: cmake
   args:
-    - -DXBOT2_DEBUG_PRINTS=TRUE
-    - -DXBOT2_GZ_SUPPORT=OFF
+    - -DXBOT2_DEBUG_PRINTS=ON
+    - -DXBOT2_GZ_SUPPORT=ON
   args_if:
     xeno: 
       - -DXBOT2_ENABLE_XENO=ON
