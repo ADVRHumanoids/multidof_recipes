@@ -3,6 +3,7 @@ depends:
   - cartesian_interface
   - iit-centauro-ros-pkg
   - concert_description
+  - base_estimation
 
 depends_if:
   binary_gen:
