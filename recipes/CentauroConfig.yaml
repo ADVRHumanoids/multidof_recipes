@@ -4,5 +4,8 @@ clone:
   repository: ADVRHumanoids/CentauroConfig.git
   tag: ros2
 
+build:
+  type: cmake
+
 depends:
   - iit-centauro-ros-pkg
