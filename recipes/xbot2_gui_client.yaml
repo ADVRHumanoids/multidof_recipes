@@ -1,0 +1,14 @@
+clone:
+  type: custom
+  cmd:
+    - wget https://github.com/ADVRHumanoids/robot_monitoring/releases/download/v2.5.5/xbot2_gui_client_x86_64.zip
+    - unzip xbot2_gui_client_x86_64.zip
+    - mv xbot2_gui_client_x86_64 {srcdir}
+    
+build:
+  type: custom
+  cmd:
+    - mkdir -p {installdir}/share/xbot2_gui_client/app
+    - cp -r {srcdir}/xbot2_gui_client_x86_64 {installdir}/share/xbot2_gui_client/app
+  env_hooks:
+    - export PATH={installdir}/share/xbot2_gui_client/app/xbot2_gui_client_x86_64/bin:\$PATH

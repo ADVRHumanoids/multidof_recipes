@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/robot_monitoring.git
+  tag: proto
+  
+build:
+  type: custom
+  cmd:
+    - pip install --no-build-isolation -e {srcdir}/server
+    
+depends:
+  - xbot_msgs
