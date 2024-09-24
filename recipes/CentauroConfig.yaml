@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/CentauroConfig.git
+  tag: ros2
+
+depends:
+  - iit-centauro-ros-pkg
