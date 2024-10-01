@@ -2,10 +2,10 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/modular.git
-  tag: pino/linfization
+  tag: master
   tag_if:
-    development: feat/linfization
-    experimental: feat/linfization
+    development: master
+    experimental: master
   recursive: true
   ros_src: true
 
