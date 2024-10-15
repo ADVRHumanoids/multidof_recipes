@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: Advanced-Robotics-Facility/ecat-master-advr.git
+  repository: advrhumanoids/ecat-master-advr.git
   tag: main
 
 pre_build_if:
