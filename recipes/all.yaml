@@ -4,6 +4,7 @@ depends:
   - iit-centauro-ros-pkg
   - concert_description
   - base_estimation
+  - centauro_cartesio
 
 depends_if:
   binary_gen:

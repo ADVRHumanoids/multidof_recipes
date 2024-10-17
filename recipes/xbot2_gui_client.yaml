@@ -1,7 +1,7 @@
 clone:
   type: custom
   cmd:
-    - wget https://github.com/ADVRHumanoids/robot_monitoring/releases/download/v2.5.5/xbot2_gui_client_x86_64.zip
+    - wget https://github.com/ADVRHumanoids/robot_monitoring/releases/download/v2.5.8/xbot2_gui_client_x86_64.zip
     - unzip xbot2_gui_client_x86_64.zip
     - mv xbot2_gui_client_x86_64 {srcdir}
     
