@@ -16,6 +16,7 @@ build:
 
 depends:
   - modular
+  - velodyne_simulator
     #  - realsense_gazebo_description
     #- velodyne_description
     #- velodyne_gazebo_plugins
