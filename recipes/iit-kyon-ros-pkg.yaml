@@ -2,5 +2,20 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: master
+  tag: ros2
   ros_src: true
+
+build:
+  type: cmake
+  cmakelists:
+    - kyon_urdf: kyon_urdf
+    - kyon_srdf: kyon_srdf
+    - kyon_gazebo: kyon_gazebo
+    - kyon_config: kyon_config
+
+depends:
+  - velodyne_simulator
+    #  - realsense_gazebo_description
+  - velodyne_description
+    #- velodyne_gazebo_plugins
+
