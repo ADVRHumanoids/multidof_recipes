@@ -8,7 +8,7 @@ clone:
 build:
   type: cmake 
   cmakelists:
-    - concert_vision: concert_vision
-    - concert_autonomous_drilling: concert_autonomous_drilling
+    # - concert_vision: concert_vision
+    # - concert_autonomous_drilling: concert_autonomous_drilling
     - concert_planning: concert_planning
 

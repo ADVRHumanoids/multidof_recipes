@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/concert_msgs.git
+  tag: ros1
+
+build:
+  type: cmake
+
+
