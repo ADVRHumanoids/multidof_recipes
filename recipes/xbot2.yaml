@@ -4,7 +4,8 @@ clone:
   repository: advrhumanoids/xbot2.git
   tag: ros2
   tag_if: 
-    stable: ros2
+    env('ROS_DISTRO') == 'humble': ros2-humble
+
 
 pre_build_if:
   binary_gen:
