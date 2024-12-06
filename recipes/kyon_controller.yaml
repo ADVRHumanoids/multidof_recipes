@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/kyon_controller.git
+  tag: ros2
+  ros_src: true
+
+build:
+  type: cmake
+
+depends:
+  - horizon
+  - iit-kyon-ros-pkg
