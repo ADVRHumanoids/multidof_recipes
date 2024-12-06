@@ -11,3 +11,4 @@ build:
 depends:
   - horizon
   - iit-kyon-ros-pkg
+  - phase_manager
