@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/concert_description.git
-  tag: ros2
+  tag: ros2_vp
   ros_src: true
   recursive: true
 

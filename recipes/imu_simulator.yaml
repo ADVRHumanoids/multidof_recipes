@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/imu_simulator.git
+  tag: master
+  
+build:
+  type: cmake
+  cmakelists:
+    - imu_simulator: imu_simulator
+
