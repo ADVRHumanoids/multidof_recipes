@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/Depth_d435_ROS2_Gazebo_Ign.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - depth_d435: depth_d435

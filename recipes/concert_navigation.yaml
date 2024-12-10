@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/concert_nav2.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - concert_navigation: concert_navigation
+
+depends:
+ - pointcloud_to_laserscan
+ - ira_laser_tools
+ - concert_mapping

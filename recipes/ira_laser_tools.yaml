@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/ira_laser_tools.git
+  tag: jazzy_v2
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - ira_laser_tools: ira_laser_tools

@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/concert_localization.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
