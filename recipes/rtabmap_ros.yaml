@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/rtabmap_ros.git
+  tag: ros2
+  recursive: true
+
+build:
+  type: custom
+  cmd:
+    - colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential
+
