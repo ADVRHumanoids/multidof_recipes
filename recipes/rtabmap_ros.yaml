@@ -11,4 +11,4 @@ build:
   cmd:
   - rosdep update
   - rosdep install --from-paths ~/data/forest_ws/ros_src/rtabmap_ros --ignore-src -r -y
-  - export MAKEFLAGS="-j1" && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential --base-paths ~/data/forest_ws/ros_src/rtabmap_ros --install-base ~/data/forest_ws/install
+  - export MAKEFLAGS="-j1" && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential --base-paths ~/data/forest_ws/ros_src/rtabmap_ros --install-base ~/data/forest_ws/install --build-base ~/data/forest_ws/build
