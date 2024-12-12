@@ -4,6 +4,7 @@ clone:
   repository: ADVRHumanoids/perception_pcl.git
   tag: jazzy_v2
   recursive: true
+  ros_src: true
 
 build:
   type: cmake

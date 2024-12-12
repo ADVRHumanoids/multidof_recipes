@@ -4,6 +4,8 @@ clone:
   repository: ADVRHumanoids/concert_mapping.git
   tag: master
   recursive: true
+  ros_src: true
+
 
 build:
   type: cmake

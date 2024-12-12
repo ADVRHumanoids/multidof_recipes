@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: ADVRHumanoids/concert_localization.git
   tag: master
+  ros_src: true
   recursive: true
 
 build:

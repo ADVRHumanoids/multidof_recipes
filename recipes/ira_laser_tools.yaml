@@ -4,6 +4,8 @@ clone:
   repository: ADVRHumanoids/ira_laser_tools.git
   tag: jazzy_v2
   recursive: true
+  ros_src: true
+
 
 build:
   type: cmake

@@ -4,6 +4,7 @@ clone:
   repository: ADVRHumanoids/concert_nav2.git
   tag: master
   recursive: true
+  ros_src: true
 
 build:
   type: cmake
