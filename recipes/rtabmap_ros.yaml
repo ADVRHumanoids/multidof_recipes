@@ -4,9 +4,11 @@ clone:
   repository: ADVRHumanoids/rtabmap_ros.git
   tag: ros2
   recursive: true
+  ros_src: true
 
 build:
   type: custom
   cmd:
-    - colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential
-
+  - rosdep update
+  - rosdep install --from-paths ~/data/forest_ws/ros_src/rtabmap_ros --ignore-src -r -y
+  - export MAKEFLAGS="-j1" && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential --base-paths ~/data/forest_ws/ros_src/rtabmap_ros --install-base ~/data/forest_ws/install
