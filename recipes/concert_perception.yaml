@@ -2,3 +2,5 @@ depends:
  - perception_pcl
  - pointcloud_to_laserscan
  - ira_laser_tools
+ - perception_utils_ros2
+

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/perception_pcl.git
-  tag: jazzy_v2
+  tag: ros2
   recursive: true
   ros_src: true
 

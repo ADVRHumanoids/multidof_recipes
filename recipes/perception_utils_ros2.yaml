@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/perception_utils_ros2.git
+  tag: master
+  recursive: true
+  ros_src: true
+
+
+build:
+  type: cmake
+  cmakelists:
+    - perception_utils_ros2: perception_utils_ros2
