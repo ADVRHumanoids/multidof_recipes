@@ -18,6 +18,9 @@ build:
 depends:
   - modular
   - velodyne_simulator
+  - iit-dagana-ros-pkg
+  - imu_simulator
+  - centauro_cartesio
     #  - realsense_gazebo_description
     #- velodyne_description
     #- velodyne_gazebo_plugins

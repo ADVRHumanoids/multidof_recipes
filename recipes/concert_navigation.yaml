@@ -15,3 +15,6 @@ depends:
  - pointcloud_to_laserscan
  - ira_laser_tools
  - concert_mapping
+ - concert_description
+ - base_estimation
+ - concert_localization
