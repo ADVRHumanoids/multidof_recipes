@@ -12,7 +12,6 @@ build:
     - concert_resources: concert_resources
     - concert_gazebo: concert_gazebo
     - concert_xbot2: concert_xbot2
-    - concert_odometry_ros2: concert_odometry_ros2
     - concert_examples: concert_examples
 
 depends:
