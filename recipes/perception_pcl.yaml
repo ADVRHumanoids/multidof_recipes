@@ -1,14 +1,3 @@
 clone:
-  type: git
-  server: github.com
-  repository: ADVRHumanoids/perception_pcl.git
-  tag: ros2
-  recursive: true
-  ros_src: true
-
-build:
-  type: cmake
-  cmakelists:
-    - pcl_ros: pcl_ros
-    - perception_pcl: perception_pcl
-    - pcl_conversions: pcl_conversions
+  type: deb
+  debname: ros-{ROS_DISTRO}-perception-pcl

@@ -9,5 +9,3 @@ clone:
 
 build:
   type: cmake
-  cmakelists:
-    - ira_laser_tools: ira_laser_tools

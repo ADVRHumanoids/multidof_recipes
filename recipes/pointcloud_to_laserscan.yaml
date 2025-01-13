@@ -9,5 +9,3 @@ clone:
 
 build:
   type: cmake
-  cmakelists:
-    - pointcloud_to_laserscan: pointcloud_to_laserscan
