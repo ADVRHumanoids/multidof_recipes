@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: FrancescoRuscelli/phase_manager.git
-  tag: devel
+  tag: new_architecture
   
 build:
   type: cmake
