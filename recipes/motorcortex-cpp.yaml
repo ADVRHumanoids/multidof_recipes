@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: git.vectioneer.com
+  repository: pub/motorcortex-cpp.git
+  tag: master
+  clone-protocol: https
+
+build:
+  type: cmake
+
+depends:
+  - nng
+
+

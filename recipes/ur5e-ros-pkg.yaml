@@ -1,6 +1,6 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/iit-kyon-ros-pkg.git
+  repository: FrancescoRuscelli/ur5e-ros-pkg.git
   tag: master
   ros_src: true

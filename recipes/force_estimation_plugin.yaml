@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/force_estimation_plugin.git
+  tag: master
+
+build:
+  type: cmake
+
+depends: 
+  - xbot2

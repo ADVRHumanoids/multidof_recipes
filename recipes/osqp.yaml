@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: oxfordcontrol/osqp.git
-  tag: release-0.6.3 # required by casadi as master tag is no more compatible
+  tag: v0.6.3 # required by current version of casadi, as master is no longer compatible
   recursive: true
 
 build:

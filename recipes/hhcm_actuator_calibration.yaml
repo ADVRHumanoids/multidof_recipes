@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/hhcm_actuator_calibration.git
+  tag: master
+  ros_src: true
+
+build:
+  type: cmake
+
+depends:
+  - xbot2
+

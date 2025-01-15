@@ -1,0 +1,6 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_conda.git
+  tag: master
+

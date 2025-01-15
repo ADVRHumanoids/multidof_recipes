@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/wall_following.git
+  tag: master
+
+build:
+  type: cmake
+
+depends: [concert_msgs]
+

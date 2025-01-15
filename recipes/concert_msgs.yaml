@@ -1,8 +1,10 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/mujoco_cmake.git
-  tag: 3.x
+  repository: advrhumanoids/concert_msgs.git
+  tag: ros1
 
 build:
   type: cmake
+
+

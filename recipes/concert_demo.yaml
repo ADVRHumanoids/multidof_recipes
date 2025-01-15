@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/concert_demo.git
+  tag: parallel_planning
+  ros_src: true
+
+build:
+  type: cmake 
+  cmakelists:
+    # - concert_vision: concert_vision
+    # - concert_autonomous_drilling: concert_autonomous_drilling
+    - concert_planning: concert_planning
+

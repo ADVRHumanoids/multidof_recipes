@@ -1,0 +1,19 @@
+clone:
+  type: git
+  server: github.com
+  repository: opencv/opencv.git
+  tag: 4.x
+
+build:
+  type: cmake
+  args_if:
+    cuda:
+      - -DWITH_CUDA=ON
+      - -DOPENCV_EXTRA_MODULES_PATH={srcdir}/../opencv_contrib/modules
+      # cudacodec::VideoReader requires Nvidia Video Codec SDK.  Please resolve dependency or disable WITH_NVCUVID=OFF
+      - -DWITH_NVCUVID=OFF
+      # cudacodec::VideoWriter requires Nvidia Video Codec SDK.  Please resolve depenmdency or disable WITH_NVCUVENC=OFF
+      - -DWITH_NVCUVENC=OFF
+depends_if:
+  cuda:
+    - opencv_contrib

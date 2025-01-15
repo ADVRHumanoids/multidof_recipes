@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/mujoco_cmake.git
-  tag: 3.x
+  repository: BehaviorTree/BehaviorTree.CPP.git
+  tag: master
 
 build:
   type: cmake

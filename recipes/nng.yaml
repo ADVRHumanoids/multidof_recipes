@@ -1,0 +1,15 @@
+clone:
+  type: git
+  server: github.com
+  repository: nanomsg/nng.git
+  tag: master
+
+build:
+  type: cmake
+  args:
+    - -DBUILD_SHARED_LIBS=ON 
+    - -DCMAKE_BUILD_TYPE=Release
+
+depends: []
+
+

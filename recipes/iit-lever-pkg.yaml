@@ -1,23 +1,20 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/xbot_msgs.git
+  repository: advrhumanoids/iit-lever-pkg.git
   tag: master
-  tag_if:
-    ros2: ros2
+  ros_src: true
+  
+build:
+  type: cmake
+  target: all
 
 pre_build_if:
   binary_gen:
     - rm -rf *.deb
 
-build:
-  type: cmake
-  skip_if: ubuntu_release < 18.04
-
 post_build_if:
   binary_gen:
     - make package
     - cp *.deb {config.binary_dir}
-
-depends: []
 

@@ -1,20 +1,17 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/albero_plugins.git
-  tag: main
+  repository: advrhumanoids/circulo9_xbot2_device.git
+  tag: v1.0
 
 build:
   type: cmake
   args:
     - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    - -DUSE_ECAT_CORE=ON
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
 
 depends:
-  - xbot2
-  - cartesian_interface
-  - cartesio_integration
-  - ec_xbot2_interfaces
-  - estimation_utils
+  - ec_xbot2_client

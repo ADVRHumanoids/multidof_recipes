@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/coworker_supervisor.git
+  tag: master
+
+build:
+  type: cmake
+
+depends: 
+  - BehaviorTree_CPP
+  - albero_plugins
+  - force_estimation_plugin
+  - xbot2
+  - cartesian_interface
+  - xbot_msgs

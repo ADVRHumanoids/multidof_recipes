@@ -4,7 +4,8 @@ clone:
   repository: advrhumanoids/cartesianinterface.git
   tag: 2.0-devel
   tag_if:
-    stable: 2.0-master
+    stable: v2.2.1
+    ros2: ros2
 
 pre_build_if:
   binary_gen:
@@ -36,4 +37,5 @@ depends:
   - OpenSoT
   - RobotInterfaceROS
   - ReflexxesTypeII
+  - estimation_utils
 

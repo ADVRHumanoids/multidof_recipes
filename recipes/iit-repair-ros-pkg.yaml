@@ -2,6 +2,6 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-repair-ros-pkg.git
-  tag: master
+  tag: joiint_lab_arms
   ros_src: true
   

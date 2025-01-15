@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/kyon_controller.git
+  tag: base_estimation
+  ros_src: true
+  
+build:
+  type: cmake
+  
+depends:
+  - horizon
+  - base_estimation
+  - phase_manager

@@ -1,0 +1,11 @@
+depends:
+ - camera_info_manager
+ - realsense_gazebo_description
+ - realsense2_description
+ - velodyne_description
+
+depends_if:
+  gazebo:
+    - gazebo_ros
+    - realsense_gazebo_plugin
+    - velodyne_gazebo_plugins

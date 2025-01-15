@@ -5,9 +5,9 @@ clone:
   tag: devel
   
 build:
-  type: cmake
-  target: all
-  cmakelists: horizon/cpp
+  type: custom
+  cmd:
+    - pip install -e {srcdir} --no-deps
   
 depends:
   - casadi_kin_dyn

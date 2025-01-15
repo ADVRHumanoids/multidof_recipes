@@ -1,0 +1,5 @@
+clone:
+  type: git
+  server: github.com
+  repository: opencv/opencv_contrib.git
+  tag: 4.x   
