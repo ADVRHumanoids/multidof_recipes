@@ -3,6 +3,8 @@ clone:
   server: source.denx.de
   repository: Xenomai/xenomai.git
   tag: v3.2.1
+  tag_if:
+    linuxv6: v3.3
   
 build:
   type: custom
