@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/mujoco_cmake.git
-  tag: master
+  tag: 3.x
 
 build:
   type: cmake
