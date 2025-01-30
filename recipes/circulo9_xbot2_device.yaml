@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/circulo9_xbot2_device.git
-  tag: v1.0
+  tag: cia402_proto
 
 build:
   type: cmake
@@ -15,3 +15,4 @@ build:
 
 depends:
   - ec_xbot2_client
+  - ec_xbot2_interfaces
