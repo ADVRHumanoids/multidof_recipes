@@ -4,6 +4,7 @@ clone:
   repository: advrhumanoids/hhcm_actuator_calibration.git
   tag: master
   ros_src: true
+  recursive: true
 
 build:
   type: cmake
