@@ -2,6 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/talos_horizon.git
+  tag: master
   
 build:
   type: cmake
