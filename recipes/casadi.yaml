@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: casadi/casadi.git
-  tag: main
+  tag: release-3.6.6
   recursive: true
 
 
