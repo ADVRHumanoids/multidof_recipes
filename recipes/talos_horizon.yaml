@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/talos_horizon.git
+  
+build:
+  type: cmake
+  
+depends:
+  - horizon
+  - phase_manager
