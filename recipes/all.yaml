@@ -2,10 +2,10 @@ depends:
   - xbot2
   - cartesian_interface
   - iit-centauro-ros-pkg
+  - iit-kyon-ros-pkg
   - concert_description
   - base_estimation
   - centauro_cartesio
-  - xbot2_gui_client
   - xbot2_gui_server
 
 depends_if:
