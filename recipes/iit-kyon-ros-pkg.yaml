@@ -16,6 +16,7 @@ build:
 
 
 depends:
+  - xbot2_ros
   - velodyne_simulator
     #  - realsense_gazebo_description
   - velodyne_description
