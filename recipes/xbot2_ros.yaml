@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_ros.git
+  tag: ros2
+  
+build:
+  type: cmake
