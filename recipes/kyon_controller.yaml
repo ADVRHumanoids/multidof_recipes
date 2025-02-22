@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/kyon_controller.git
-  tag: base_estimation
+  tag: devel
   ros_src: true
   
 build:
@@ -10,5 +10,5 @@ build:
   
 depends:
   - horizon
-  - base_estimation
+  - iit-kyon-ros-pkg
   - phase_manager
