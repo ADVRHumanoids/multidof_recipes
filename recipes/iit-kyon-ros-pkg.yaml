@@ -15,9 +15,9 @@ build:
     - kyon_mujoco: kyon_mujoco
 
 
-depends:
+# depends:
   # - xbot2_ros
-  - velodyne_simulator
+  # - velodyne_simulator
     #  - realsense_gazebo_description
-  - velodyne_description
+  # - velodyne_description
     #- velodyne_gazebo_plugins
