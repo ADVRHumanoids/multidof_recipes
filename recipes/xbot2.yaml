@@ -4,7 +4,7 @@ clone:
   repository: advrhumanoids/xbot2.git
   tag: devel
   tag_if: 
-    stable: v2.12.3
+    stable: v2.13.3
     ros2: ros2
 
 pre_build_if:
