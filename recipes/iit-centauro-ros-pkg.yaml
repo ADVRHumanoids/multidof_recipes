@@ -11,6 +11,7 @@ build:
     - centauro_srdf: centauro_srdf
     - centauro_gazebo: centauro_gazebo
     - centauro_config: centauro_config
+    - centauro_mujoco: centauro_mujoco
 
 pre_build_if:
   binary_gen:
