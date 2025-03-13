@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/kyon_controller.git
-  tag: devel
+  tag: deliverable
   ros_src: true
   
 build:
