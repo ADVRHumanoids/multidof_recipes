@@ -9,4 +9,3 @@ depends:
   - realsense_gazebo_description
   - velodyne_description
   - velodyne_gazebo_plugins
-  - iit-dagana-ros-pkg
