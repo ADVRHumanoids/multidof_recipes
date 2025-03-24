@@ -1,7 +1,0 @@
-clone:
-  type: git
-  server: github.com
-  repository: advrhumanoids/iit-mirror-ros-pkg.git
-  tag: master
-  ros_src: true
-  
