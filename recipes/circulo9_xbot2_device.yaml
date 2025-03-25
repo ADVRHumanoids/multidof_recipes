@@ -2,12 +2,11 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/circulo9_xbot2_device.git
-  tag: v1.0
+  tag: ros2
 
 build:
   type: cmake
   args:
-    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     - -DUSE_ECAT_CORE=ON
   args_if:
     xeno:

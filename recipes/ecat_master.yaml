@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: Advanced-Robotics-Facility/ecat-master-advr.git
-  tag: main
+  repository: advrhumanoids/ecat-master-advr.git
+  tag: main_general_actuator
 
 pre_build_if:
   binary_gen:
