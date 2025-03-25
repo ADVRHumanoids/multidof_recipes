@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/kyon_config.git
+  tag: master
+
+
+depends: []
