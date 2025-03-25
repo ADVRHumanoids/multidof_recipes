@@ -1,14 +1,13 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/kyon_controller.git
-  tag: base_estimation
-  ros_src: true
+  repository: robot21/kyon_controller.git
+  tag: deliverable
+  ros_src: false
   
 build:
   type: cmake
   
 depends:
   - horizon
-  - base_estimation
   - phase_manager
