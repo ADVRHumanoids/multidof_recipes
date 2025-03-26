@@ -25,3 +25,4 @@ post_build_if:
 depends:
   - xbot2
   - ecat_master
+  - ec_xbot2_interfaces
