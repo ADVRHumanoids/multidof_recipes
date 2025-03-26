@@ -8,6 +8,9 @@ build:
   type: cmake
   args:
     - -DUSE_ECAT_CORE=ON
+    - -DBUILD_PLUGIN=OFF
+    - -DBUILD_UTILS=OFF
+    - -DBUILD_TESTING=OFF
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
