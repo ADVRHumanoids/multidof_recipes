@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: master
+  tag: real
   ros_src: true
 
 depends:
