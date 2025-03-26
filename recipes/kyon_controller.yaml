@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: robot21/kyon_controller.git
+  repository: robot-21/kyon_controller.git
   tag: deliverable
   ros_src: false
   
