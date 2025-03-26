@@ -8,4 +8,4 @@ clone:
 build:
   type: custom
   cmd:
-    - python -m pip install -e {srcdir}
+    - python3 -m pip install -e {srcdir}

@@ -7,7 +7,7 @@ clone:
 build:
   type: custom
   cmd:
-    - pip install --no-build-isolation -e {srcdir}/server
+    - python3 -m pip install --no-build-isolation -e {srcdir}/server
     
 depends:
   - xbot_msgs
