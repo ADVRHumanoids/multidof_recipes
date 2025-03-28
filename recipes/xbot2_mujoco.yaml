@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2_mujoco.git
-  tag: 3.xs
+  tag: master
 
 build:
   type: cmake
