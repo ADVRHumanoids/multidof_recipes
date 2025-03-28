@@ -8,7 +8,7 @@ mkdir my_workspace && cd my_workspace
 forest init
 source setup.bash
 forest add-recipes git@github.com:ADVRHumanoids/multidof_recipes.git --tag master
-forest <recipe-name> -j 4 
+forest grow <recipe-name> -j 4 
 ```
 
 *Note #1* to enable the *xeno flags*, you can use the command `forest -m xeno <recipe-name> -j 4`
