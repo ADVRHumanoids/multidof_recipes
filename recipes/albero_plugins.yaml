@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_plugins.git
-  tag: concert_stuff
+  tag: ros2-humble-dev
 
 build:
   type: cmake
@@ -16,4 +16,3 @@ depends:
   - xbot2
   - cartesian_interface
   - cartesio-integration
-  - ec_xbot2_client

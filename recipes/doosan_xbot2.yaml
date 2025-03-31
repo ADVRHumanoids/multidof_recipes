@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: magician-project/doosan_xbot2.git
+  tag: hal
+
+build:
+  type: cmake
+  args:
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+  # args_if:
+  #   xeno:
+  #     - -DXBOT2_ENABLE_XENO=ON
+
+depends:
+  - xbot2
