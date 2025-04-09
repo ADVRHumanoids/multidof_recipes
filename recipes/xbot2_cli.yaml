@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_cli.git
+  tag: master
+  recursive: true
+
+build:
+  type: custom
+  cmd:
+    - python3 -m pip install -e {srcdir}
