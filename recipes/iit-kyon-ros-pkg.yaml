@@ -2,5 +2,5 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: master
+  tag: deliverable
   ros_src: true

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/horizon
-  tag: receding_horizon
+  tag: devel
   
 build:
   type: custom
