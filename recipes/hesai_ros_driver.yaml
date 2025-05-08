@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/HesaiLidar_ROS_2.0
+  recursive: true
+  ros_src: true
+  tag: master
+
+build:
+  type: cmake
+
