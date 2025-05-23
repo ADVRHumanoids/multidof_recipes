@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: lucarossini-iit/elevation_mapping_cupy
+  tag: dev/ngazzanelli
+
+build:
+  type: cmake
+
