@@ -1,5 +1,5 @@
 # multidof_recipes
-Collection of forest recipes for multidof's software
+Collection of forest recipes for multidof's software 
 
 # How to use
 ```
