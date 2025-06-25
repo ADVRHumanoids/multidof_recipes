@@ -2,9 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: devel
+  tag: motor_tor
   tag_if: 
-    stable: v2.14.0
+    stable: v2.13.3
     ros2: ros2
 
 pre_build_if:
@@ -33,5 +33,4 @@ depends:
 depends_if:
   xeno:
     - Xenomai
-
 
