@@ -1,4 +1,0 @@
-depends:
-  - xbot2
-  - ModelInterfaceRBDL
-  - cartesian_interface

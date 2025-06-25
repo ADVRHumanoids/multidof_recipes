@@ -1,6 +1,0 @@
-clone:
-  type: git
-  server: github.com
-  repository: advrhumanoids/iit-teleop-ros-pkg.git
-  tag: xbot2_stable_sim
-  

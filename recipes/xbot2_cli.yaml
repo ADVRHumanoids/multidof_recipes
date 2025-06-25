@@ -2,14 +2,10 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2_cli.git
-  tag: master 
+  tag: master
+  recursive: true
 
 build:
   type: custom
-  cmd: 
-    - pip install -e {srcdir}
-  env_hooks:
-    - eval \"\$(register-python-argcomplete xbot2)\"
-
-depends:
-  - xbot_msgs
+  cmd:
+    - python3 -m pip install -e {srcdir}

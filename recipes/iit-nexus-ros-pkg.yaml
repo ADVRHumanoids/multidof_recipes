@@ -1,12 +1,11 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: master
+  repository: advrhumanoids/iit-nexus-ros-pkg.git
+  tag: deliverable
   ros_src: true
 
 depends:
   - realsense_gazebo_description
   - velodyne_description
   - velodyne_gazebo_plugins
-  - iit-dagana-ros-pkg
