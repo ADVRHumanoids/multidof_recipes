@@ -7,7 +7,6 @@ clone:
 build:
   type: cmake
   args:
-    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     - -DUSE_ECAT_CORE=ON
   args_if:
     xeno:
