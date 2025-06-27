@@ -1,8 +1,0 @@
-clone:
-  type: git
-  server: github.com
-  repository: advrhumanoids/ec_xbot2_interfaces.git
-  tag: master
-  
-build:
-  type: cmake

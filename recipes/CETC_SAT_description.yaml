@@ -1,9 +1,0 @@
-clone:
-  type: git
-  server: github.com
-  repository: ADVRHumanoids/CETC_SAT_description.git
-  tag: main
-  ros_src: false
-  
-build:
-  type: cmake
