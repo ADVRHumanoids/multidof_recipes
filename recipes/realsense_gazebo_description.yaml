@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/realsense_gazebo_description.git
+  tag: master 
+  ros_src: true
+  
+build:
+  type: cmake
+  
+depends:
+  - realsense_gazebo_plugin
+  

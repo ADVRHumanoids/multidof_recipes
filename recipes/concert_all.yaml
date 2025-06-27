@@ -1,0 +1,4 @@
+depends:
+ - concert_description  # robot model tools, launch files for ik, gazebo, odometry, ...
+ - centauro_cartesio  # steering and rolling IK modules
+ - base_estimation  # odometry

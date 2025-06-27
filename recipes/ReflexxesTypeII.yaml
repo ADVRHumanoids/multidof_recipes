@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/RMLTypeII.git
+  tag: static
+
+build:
+  type: cmake
+
+depends: []
+
+

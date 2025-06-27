@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/roboptim-core-plugin-ipopt.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+  args:
+    - -DDISABLE_TESTS=ON
+
+depends:
+  - roboptim-core
+  - ipopt
+  - gfortran

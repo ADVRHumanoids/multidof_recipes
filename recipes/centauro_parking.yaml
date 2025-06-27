@@ -1,0 +1,6 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/centauro_parking.git
+  tag: main
+  ros_src: true

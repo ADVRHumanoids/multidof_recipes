@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/roboptim-capsule.git
+  tag: master
+
+build:
+  type: cmake
+
+depends:
+  - roboptim-core-plugin-ipopt

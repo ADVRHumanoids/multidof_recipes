@@ -1,0 +1,3 @@
+clone:
+  type: deb
+  debname: ros-{ROS_DISTRO}-realsense2-description

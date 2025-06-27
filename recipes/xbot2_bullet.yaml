@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_bullet.git
+  tag: master
+
+build:
+  type: cmake
+  target: all
+
+depends:
+  - xbot2
+  - pybind11

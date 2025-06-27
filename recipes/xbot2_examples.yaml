@@ -1,0 +1,15 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_examples.git
+  tag: master
+
+build:
+  type: cmake
+  args_if:
+    xeno:
+      - -DXBOT2_ENABLE_XENO=ON
+
+depends:
+  - xbot2
+  - cartesian_interface
