@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids//centauro_walk.git
-  tag: master
+  tag: centauro
   ros_src: false
   
 build:
