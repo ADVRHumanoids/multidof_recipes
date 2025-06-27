@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/kyon_controller.git
+  tag: master
+  ros_src: false
+  
+build:
+  type: cmake
+  
+depends:
+  - horizon
+  - phase_manager
