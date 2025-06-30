@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/centauro_walk.git
+  repository: advrhumanoids/kyon_controller.git
   tag: centauro
   ros_src: false
   

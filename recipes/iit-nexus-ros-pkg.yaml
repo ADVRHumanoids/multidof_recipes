@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: deliverable
+  repository: advrhumanoids/iit-nexus-ros-pkg.git
+  tag: master
   ros_src: true
 
 depends:
