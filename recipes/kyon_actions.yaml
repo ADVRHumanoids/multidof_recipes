@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/kyon_actions.git
+  tag: master
+  
+build:
+  type: cmake
