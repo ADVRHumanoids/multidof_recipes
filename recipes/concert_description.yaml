@@ -9,6 +9,7 @@ clone:
 build:
   type: cmake
   cmakelists:
+    - concert_cartesio: concert_cartesio
     - concert_resources: concert_resources
     - concert_gazebo: concert_gazebo
     - concert_xbot2: concert_xbot2
