@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/iit-nexus-ros-pkg.git
-  tag: master
+  repository: advrhumanoids/iit-nexus-ros-pkg-.git
+  tag: xbot2_update
   ros_src: true
 
 depends:
