@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/horizon
-  tag: devel
+  tag: ros2
   
 build:
   type: custom
