@@ -2,7 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2_examples.git
-  tag: v2.10
+  tag: master
+  tag_if: 
+    stable: v2.10
 
 build:
   type: cmake
