@@ -33,6 +33,7 @@ depends:
   - matlogger2
   - xbot_msgs
   - srdfdom
+  - control_msgs
 
 depends_if:
   xeno:
