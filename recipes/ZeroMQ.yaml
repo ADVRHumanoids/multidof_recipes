@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: zeromq/libzmq.git
-  tag: 4097855
+  tag: v4.3.4
 
 build:
   type: cmake
