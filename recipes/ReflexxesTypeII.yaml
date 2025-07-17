@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/RMLTypeII.git
-  tag: static
+  tag: 1c50392
 
 build:
   type: cmake

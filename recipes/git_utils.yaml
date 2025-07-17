@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: marcoruzzon/git_utils.git
-  tag: master
+  tag: 4f1bca8
   
 build:
   type: custom

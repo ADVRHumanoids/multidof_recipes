@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/ModelInterfaceRBDL.git
-  tag: devel
+  tag: ea7bdf7
 
 pre_build_if:
   binary_gen:

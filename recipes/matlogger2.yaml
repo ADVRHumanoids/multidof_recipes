@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/matlogger2.git
-  tag: devel
+  tag: 7e5e436
 
 pre_build_if:
   binary_gen:

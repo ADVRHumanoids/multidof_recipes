@@ -2,9 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: devel
+  tag: cabd29c5
   tag_if: 
-    stable: v2.10
+    stable: cabd29c5
 
 pre_build_if:
   binary_gen:

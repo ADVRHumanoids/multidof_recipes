@@ -2,9 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesianinterface.git
-  tag: force_limits
+  tag: 654166b
   tag_if:
-    stable: force_limits
+    stable: 654166b
     
 pre_build_if:
   binary_gen:

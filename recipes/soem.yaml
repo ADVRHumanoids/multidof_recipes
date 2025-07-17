@@ -4,7 +4,7 @@ clone:
   type: git
   server: github.com
   repository: alessiomargan/SOEM.git
-  tag: xeno3
+  tag: a7cf57b
 
 build:
   type: cmake

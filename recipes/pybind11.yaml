@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: pybind/pybind11.git
-  tag: v2.9.0
+  tag: 45f792e
 
 build:
   type: cmake

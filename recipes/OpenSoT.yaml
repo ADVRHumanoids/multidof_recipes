@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/OpenSoT.git
-  tag: devel
+  tag: 00ede6c
 
 pre_build_if:
   binary_gen:

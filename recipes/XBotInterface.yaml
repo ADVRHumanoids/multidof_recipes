@@ -2,10 +2,10 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/XBotInterface.git
-  tag: devel
+  tag: 66e516deae
   tag_if:
-    stable: v2.2.0
-    experimental: experimental
+    stable: 66e516deae
+    experimental: 66e516deae
 
 pre_build_if:
   binary_gen:

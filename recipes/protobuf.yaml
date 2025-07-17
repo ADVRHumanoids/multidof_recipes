@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/protobuf.git
-  tag: ${'xbot2' if ubuntu_release < 20 else 'xbot2_v3.6.x'}
+  tag: 55d09cb
 
 build:
   type: cmake

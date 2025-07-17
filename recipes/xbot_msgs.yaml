@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
+  tag: 82ddc95
   repository: advrhumanoids/xbot_msgs.git
-  tag: master
 
 pre_build_if:
   binary_gen:

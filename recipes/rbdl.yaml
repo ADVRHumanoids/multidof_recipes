@@ -2,9 +2,9 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/rbdl.git
-  tag: devel
+  tag: 1fd1f41
   tag_if:
-    experimental: experimental
+    experimental: 1fd1f41
 
 build:
   type: cmake

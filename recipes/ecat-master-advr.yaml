@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/ecat-master-advr
-  tag: drill_integration
+  tag: aa5b114
 
 pre_build_if:
   binary_gen:

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/ec_xbot2_client.git
-  tag: mr/no_jm
+  tag: 57c1208
 
 pre_build_if:
   binary_gen:
