@@ -7,7 +7,7 @@ clone:
 build:
   type: custom
   cmd:
-    - pip install -e {srcdir}
+    - pip install {srcdir}
 
 depends: 
   - albero_msgs
