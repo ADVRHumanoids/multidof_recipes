@@ -1,11 +1,11 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/modular.git
-  tag: master
+  repository: advrhumanoids/modular_hhcm.git
+  tag: pino_jl
   tag_if:
-    development: master
-    experimental: master
+    development: pino_jl
+    experimental: pino_jl
   recursive: true
   ros_src: true
 

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/estimation_utils.git
-  tag: master
+  tag: 98d5ce9
 
 build:
   type: cmake

@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesian-impedance-controller.git
-  tag: main
+  tag: 591ff0f
 
 build:
   type: cmake
