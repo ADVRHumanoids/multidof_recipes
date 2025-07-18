@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_plugins.git
-  tag: devel
+  tag: 6d3620f
 
 build:
   type: cmake

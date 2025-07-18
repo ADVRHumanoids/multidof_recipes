@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_interfaces.git
-  tag: master
+  tag: c675599
 
 build:
   type: cmake
