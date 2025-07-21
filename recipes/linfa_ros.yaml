@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/linfa_ros.git
-  tag: master
+  tag: d8893a55e3b16fb84cf18f431b7602a044fe1436
   tag_if:
     development: development
     experimental: experimental

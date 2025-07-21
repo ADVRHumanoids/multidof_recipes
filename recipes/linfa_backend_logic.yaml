@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/linfa_backend_logic.git
-  tag: main
+  tag: 33f0df85370132a33dfb6af54e6d4709779ddc47
   ros_src: true
 
 build:

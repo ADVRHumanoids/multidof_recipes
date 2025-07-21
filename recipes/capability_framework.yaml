@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/capability_framework.git
-  tag: main
+  tag: c494124f6ae26038a39138fa8d197f229f01ca01
 
 build:
   type: custom
