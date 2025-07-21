@@ -1,7 +1,7 @@
 clone:
   type: git
-  server: source.denx.de
-  repository: Xenomai/xenomai.git
+  server: github.com
+  repository: xenomai-ci/xenomai.git
   tag: v3.2.1
   tag_if:
     linuxv6: v3.3
