@@ -7,7 +7,3 @@ clone:
     development: development
     experimental: experimental
   ros_src: true
-  recursive: true
-
-depends:
-  - dumb-init
