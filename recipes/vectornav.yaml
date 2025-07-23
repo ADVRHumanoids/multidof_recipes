@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/vectornav.git
+  tag: orientation_nwu
+  ros_src: true
+
+build:
+  type: cmake
+          
