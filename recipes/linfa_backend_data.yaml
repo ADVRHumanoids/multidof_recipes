@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/linfa_backend_data.git
-  tag: v1.0.0-alpha.4.3
+  tag: v1.0.0-alpha.4.4
   tag_if:
     development: development
     experimental: development
