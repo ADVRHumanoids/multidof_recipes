@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/albero-api.git
-  tag: 63faeab
+  tag: ef936adbb888abed3e260a2e6fc5dee239d0dc53
 
 build:
   type: custom
