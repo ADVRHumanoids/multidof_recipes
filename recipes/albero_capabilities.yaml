@@ -7,4 +7,4 @@ clone:
 build:
   type: custom
   cmd:
-    - pip install {srcdir}
+    - pip install -e {srcdir}
