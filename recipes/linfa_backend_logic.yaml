@@ -12,3 +12,4 @@ build:
 
 depends:
   - capability_framework
+  - linfa_ros

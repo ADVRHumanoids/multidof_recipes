@@ -15,7 +15,7 @@ build:
 
 depends:
   - linfa_ros
-  - linfa_backend_logic
+  # - linfa_backend_logic
   - dumb-init
 
 depends_if:
