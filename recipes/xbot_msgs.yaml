@@ -1,7 +1,7 @@
 clone:
   type: git
   server: github.com
-  tag: 82ddc95
+  tag: caab299
   repository: advrhumanoids/xbot_msgs.git
 
 pre_build_if:

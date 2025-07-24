@@ -2,9 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/cartesianinterface.git
-  tag: 654166b
-  tag_if:
-    stable: 654166b
+  tag: a7d21af
     
 pre_build_if:
   binary_gen:

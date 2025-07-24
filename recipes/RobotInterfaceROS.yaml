@@ -3,8 +3,6 @@ clone:
   server: github.com
   repository: advrhumanoids/RobotInterfaceROS.git
   tag: b6c6895
-  tag_if:
-    stable: b6c6895
 
 pre_build_if:
   binary_gen:
