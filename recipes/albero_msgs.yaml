@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/albero_msgs.git
-  tag: 4aad6a9
+  tag: v0.0.1
   ros_src: true
 
 build:
