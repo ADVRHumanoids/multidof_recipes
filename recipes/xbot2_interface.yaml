@@ -13,8 +13,8 @@ pre_build_if:
 build:
   type: cmake
   args:
-   - -DXBOT2_IFC_BUILD_ROS=OFF
-   - -DXBOT2_IFC_BUILD_ROS2=ON
+   - -DXBOT2_IFC_BUILD_ROS=ON
+   - -DXBOT2_IFC_BUILD_ROS2=OF
   #  - -DCMAKE_CXX_COMPILER=$(which clang++)
   args_if:
     test:
