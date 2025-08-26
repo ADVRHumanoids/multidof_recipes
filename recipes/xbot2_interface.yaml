@@ -1,0 +1,34 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_interface.git
+  tag: master
+  tag_if:
+    stable: master
+
+pre_build_if:
+  binary_gen:
+    - rm -rf *.deb
+
+build:
+  type: cmake
+  args:
+   - -DXBOT2_IFC_BUILD_ROS=OFF
+   - -DXBOT2_IFC_BUILD_ROS2=ON
+  #  - -DCMAKE_CXX_COMPILER=$(which clang++)
+  args_if:
+    test:
+      - -DXBOTIFC_BUILD_TESTS=ON
+
+post_build_if:
+  binary_gen:
+    - make package
+    - cp *.deb {config.binary_dir}
+
+depends: 
+  - matlogger2
+  - pybind11
+  - pinocchio
+  - xbot_msgs
+
+
