@@ -10,7 +10,6 @@ build:
     - pip install -e {srcdir}
   env_hooks:
     - eval \"\$(register-python-argcomplete xbot2)\"
-    - eval \"\$(register-python-argcomplete ecat)\"
 
 depends:
   - xbot_msgs
