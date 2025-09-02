@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/vectornav.git
+  tag: ros2
+
+build:
+  type: cmake
+  cmakelists:
+    - vectornav_msgs: vectornav_msgs
+    - vectornav: vectornav
