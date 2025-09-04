@@ -11,3 +11,4 @@ build:
     
 depends:
   - xbot_msgs
+  - concert_launcher
