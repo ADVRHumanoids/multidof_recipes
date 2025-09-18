@@ -6,7 +6,14 @@ clone:
   recursive: true
   ros_src: true
 
+pre_build:
+  - |
+    if [ -f "{srcdir}/setup.py" ]; then
+      pip install -e {srcdir}
+    fi
+
 build:
-  type: custom
-  cmd:
-    - pip install -e {srcdir}
+  type: cmake
+  cmakelists:
+    - modular: .
+    - modular_resources: src/modular/modular_resources
