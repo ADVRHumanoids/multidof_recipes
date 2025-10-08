@@ -4,6 +4,3 @@ clone:
   repository: advrhumanoids/iit-nexus-ros-pkg.git
   tag: xbot2_update
   ros_src: true
-
-build:
-  type: cmake
