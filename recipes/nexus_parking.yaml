@@ -1,13 +1,12 @@
 clone:
   type: git
   server: github.com
-  repository: ADVRHumanoids/kyon_controller.git
-  tag: nexus
+  repository: advrhumanoids/nexus_parking.git
+  tag: main
   ros_src: true
   
 build:
   type: cmake
   
 depends:
-  - horizon
-  - phase_manager
+ - centauro_cartesio

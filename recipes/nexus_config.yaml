@@ -5,4 +5,5 @@ clone:
   tag: master
 
 
-depends: []
+build:
+  type: cmake

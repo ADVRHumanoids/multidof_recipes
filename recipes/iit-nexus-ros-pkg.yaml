@@ -5,6 +5,9 @@ clone:
   tag: xbot2_update
   ros_src: true
 
+build:
+  type: cmake
+
 depends:
   - realsense_gazebo_description
   - velodyne_description
