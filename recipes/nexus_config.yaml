@@ -2,7 +2,8 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/nexus_config.git
-  tag: master
+  tag: ros2
 
 
-depends: []
+build:
+  type: cmake

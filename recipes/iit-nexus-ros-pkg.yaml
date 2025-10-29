@@ -2,5 +2,8 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-nexus-ros-pkg.git
-  tag: xbot2_update
+  tag: xbot2_ros2
   ros_src: true
+  
+build:
+  type: cmake
