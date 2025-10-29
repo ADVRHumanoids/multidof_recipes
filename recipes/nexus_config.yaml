@@ -5,5 +5,4 @@ clone:
   tag: ros2
 
 
-build:
-  type: cmake
+depends: []
