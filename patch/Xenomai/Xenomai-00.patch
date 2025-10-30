@@ -1,0 +1,12 @@
+diff --git a/lib/cobalt/malloc.c b/lib/cobalt/malloc.c
+index 82f89fd..3a807ac 100644
+--- a/lib/cobalt/malloc.c
++++ b/lib/cobalt/malloc.c
+@@ -27,6 +27,7 @@ COBALT_IMPL(void *, malloc, (size_t size))
+ 
+ COBALT_IMPL(void, free, (void *ptr))
+ {
++	if(!ptr) return;
+ 	cobalt_assert_nrt();
+ 	__STD(free(ptr));
+ }

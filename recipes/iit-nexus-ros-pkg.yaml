@@ -8,9 +8,8 @@ clone:
 build:
   type: cmake
   cmakelists:
-    - kyon_urdf: kyon_urdf
-    - kyon_srdf: kyon_srdf
-    - kyon_gazebo: kyon_gazebo
-    - kyon_config: kyon_config
-    - kyon_mujoco: kyon_mujoco
-    - kyon_cartesio: kyon_cartesio
+    - nexus_urdf: nexus_urdf
+    - nexus_srdf: nexus_srdf
+    - nexus_gazebo: nexus_gazebo
+    - nexus_config: nexus_config
+    - nexus_cartesio_config: nexus_cartesio_config
