@@ -7,8 +7,10 @@ clone:
 build:
   type: cmake
   args:
-    - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     - -DUSE_ECAT_CORE=ON
+    - -DBUILD_PLUGIN=OFF
+    - -DBUILD_UTILS=OFF
+    - -DBUILD_TESTING=OFF
   args_if:
     xeno:
       - -DXBOT2_ENABLE_XENO=ON
