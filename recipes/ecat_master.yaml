@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/ecat-master-advr.git
-  tag: main_general_actuator
+  tag: main
 
 pre_build_if:
   binary_gen:
