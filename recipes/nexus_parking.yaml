@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/nexus_parking.git
-  tag: main
+  tag: xbot2_gui
   ros_src: true
   
 build:
