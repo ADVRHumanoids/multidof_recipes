@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/nexus_config.git
-  tag: ros2
+  tag: master
 
 
 build:
