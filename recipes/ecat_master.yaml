@@ -3,6 +3,8 @@ clone:
   server: github.com
   repository: advrhumanoids/ecat-master-advr.git
   tag: main_general_actuator
+  tag_if:
+    ecat_old_fw: main
 
 pre_build_if:
   binary_gen:
