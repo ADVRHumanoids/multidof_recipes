@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-concert-ros-pkg.git
-  tag: ros2
+  tag: master
   ros_src: true
 
 build:
