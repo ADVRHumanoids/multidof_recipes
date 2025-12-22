@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-concert-ros-pkg.git
+  tag: ros2
+  ros_src: true
+
+build:
+  type: cmake
+  cmakelists:
+    - concert_gazebo: concert_gazebo
+    - concert_config: concert_config
