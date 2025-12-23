@@ -10,3 +10,12 @@ build:
   cmakelists:
     - concert_gazebo: concert_gazebo
     - concert_config: concert_config
+    - concert_odometry_ros2: concert_odometry_ros2
+    - concert_examples: concert_examples
+    - concert_cartesio: concert_cartesio
+depends:
+  - modular
+  - velodyne_simulator
+    #  - realsense_gazebo_description
+    #- velodyne_description
+    #- velodyne_gazebo_plugins
