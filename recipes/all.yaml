@@ -3,7 +3,6 @@ depends:
   - cartesian_interface
   - iit-centauro-ros-pkg
   - iit-kyon-ros-pkg
-  - concert_description
   - base_estimation
   - centauro_cartesio
   - xbot2_gui_server
