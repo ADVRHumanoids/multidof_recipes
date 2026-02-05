@@ -5,6 +5,7 @@ clone:
   tag: master
   ros_src: true
   recursive: true
+  recursive: true
 
 build:
   type: cmake
@@ -15,7 +16,6 @@ build:
     - concert_examples: concert_examples
     - concert_cartesio: concert_cartesio
     - concert_resources: concert_resources
-
 depends:
   - modular
   - velodyne_simulator
