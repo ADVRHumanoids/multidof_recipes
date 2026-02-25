@@ -1,4 +1,5 @@
 clone:
+  type: git
   server: github.com
   repository: advrhumanoids/iit-anime-ros-pkg.git
   tag: master
