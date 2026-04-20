@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: stack-of-tasks/pinocchio.git
-  tag: v2.7.1
+  repository: advrhumanoids/pinocchio.git
+  tag: v2.7.1-hhcm
   recursive: true
 
 
@@ -14,7 +14,7 @@ build:
     - -DBUILD_TESTING=OFF
     - -DBUILD_UTILS=OFF
     - -DBUILD_WITH_COLLISION_SUPPORT=ON
+    - -DBUILD_SHARED_LIBS=OFF
 
 depends:
   - hpp-fcl
-

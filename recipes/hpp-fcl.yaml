@@ -3,11 +3,12 @@ clone:
   server: github.com
   repository: ADVRHumanoids/hpp-fcl.git
   recursive: true
-  tag: witness_fix
+  tag: static_build
   
 build:
   type: cmake
   args:
     - -DBUILD_PYTHON_INTERFACE=OFF
     - -DBUILD_TESTING=OFF
-
+    - -DBUILD_SHARED_LIBS=OFF
+    - -DHPP_FCL_HAS_QHULL=ON
