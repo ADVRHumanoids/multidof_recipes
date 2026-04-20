@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/velodyne_simulator.git
+  tag: foxy-devel
+  
+build:
+  type: cmake
+  cmakelists:
+    - velodyne_description: velodyne_description
+
