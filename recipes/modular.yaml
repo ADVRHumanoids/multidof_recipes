@@ -2,11 +2,18 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/modular_hhcm.git
-  tag: ros2-merge-no-tf
+  tag: ros2
   recursive: true
   ros_src: true
 
+pre_build:
+  - |
+    if [ -f "{srcdir}/setup.py" ]; then
+      pip install -e {srcdir}
+    fi
+
 build:
-  type: custom
-  cmd:
-    - pip install -e {srcdir}
+  type: cmake
+  cmakelists:
+    - modular: .
+    - modular_resources: src/modular/modular_resources
