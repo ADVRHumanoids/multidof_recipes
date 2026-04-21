@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/moveit_compute_default_collisions.git
-  tag: master
+  tag: ros2
 
 build:
   type: cmake
