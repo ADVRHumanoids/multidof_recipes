@@ -10,3 +10,6 @@ build:
   cmakelists:
     - inail2arm_urdf: inail2arm_urdf
     - inail2arm_srdf: inail2arm_srdf
+    - inail2arm_gazebo: inail2arm_gazebo
+    - inail2arm_cartesio: inail2arm_cartesio
+    - inail2arm_xbot2_config: inail2arm_xbot2_config

@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: Robosintesi/tree_rst.git
+  tag: master
+
+build:
+  type: cmake
+
+depends:
+  - xbot2
+  - cartesian_interface
+  - rst-anime-ros-pkg ### BAAAD!
