@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: ros2
+  tag: ros2-feat-mimic-gz
   tag_if: 
     env('ROS_DISTRO') == 'humble': ros2-humble
 
