@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: Robosintesi/anime_bt.git
+  tag: master
+
+build:
+  type: cmake
+
+depends:
+  - rst-anime-ros-pkg
+  - tree_rst
