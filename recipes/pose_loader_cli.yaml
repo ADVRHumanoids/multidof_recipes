@@ -4,9 +4,6 @@ clone:
   repository: Robosintesi/pose_loader_cli.git
   tag: master
 
-build:
-  type: cmake
-
 depends:
   - xbot2
   - cartesian_interface

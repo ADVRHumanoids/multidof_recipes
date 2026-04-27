@@ -1,1 +1,21 @@
-../../../src/rst-anime-ros-pkg/forest-recipe.yaml
+clone:
+  type: git
+  server: github.com
+  repository: Robosintesi/rst-anime-ros-pkg.git
+  tag: master
+
+build:
+  type: cmake
+  cmakelists:
+    - anime_urdf: anime_urdf
+    - anime_srdf: anime_srdf
+    - anime_cartesio: anime_cartesio
+    - anime_gazebo: anime_gazebo
+    - anime_xbot2: anime_xbot2
+    - anime_curobo: anime_curobo
+    - anime_msgs: anime_msgs
+    - anime_ros: anime_ros
+
+depends:
+  - xbot2
+  - cartesian_interface
