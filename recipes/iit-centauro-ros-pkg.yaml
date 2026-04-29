@@ -12,6 +12,7 @@ build:
     - centauro_gazebo: centauro_gazebo
     - centauro_config: centauro_config
     - centauro_mujoco: centauro_mujoco
+    - centauro_cartesio_config: centauro_cartesio_config
 
 pre_build_if:
   binary_gen:
