@@ -1,13 +1,3 @@
 depends:
-  - xbot2
-  - cartesian_interface
-  - iit-centauro-ros-pkg
-  - iit-kyon-ros-pkg
-  - base_estimation
-  - centauro_cartesio
-  - xbot2_gui_server
+  - matlogger2
 
-depends_if:
-  binary_gen:
-    - xbot_env
-    - xbot2_desktop_full
