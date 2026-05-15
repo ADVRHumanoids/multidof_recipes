@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_py_bridge.git
+  tag: master
+
+build:
+  type: cmake
+
+  
