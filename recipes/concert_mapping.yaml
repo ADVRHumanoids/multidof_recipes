@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/concert_mapping.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+
+depends:
+ - rtabmap_ros
+ - cartographer_ros

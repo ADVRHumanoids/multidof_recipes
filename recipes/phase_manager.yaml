@@ -1,8 +1,8 @@
 clone:
   type: git
   server: github.com
-  repository: FrancescoRuscelli/phase_manager.git
-  tag: devel
+  repository: advrhumanoids/phase_manager.git
+  tag: ros2
   
 build:
   type: cmake

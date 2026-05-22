@@ -1,10 +1,10 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/cartesianinterface.git
-  tag: ros2
+  repository: advrhumanoids/xbot2_interface.git
+  tag: master
   tag_if:
-    stable: ros2
+    stable: master
 
 pre_build_if:
   binary_gen:
@@ -13,10 +13,11 @@ pre_build_if:
 build:
   type: cmake
   args:
-    - -DCARTESIO_COMPILE_EXAMPLES=TRUE
+   - -DXBOT2_IFC_BUILD_ROS=OFF
+   - -DXBOT2_IFC_BUILD_ROS2=ON
   args_if:
     test:
-      - -DCARTESIO_BUILD_TESTS=ON
+      - -DXBOTIFC_BUILD_TESTS=ON
 
 post_build_if:
   binary_gen:
@@ -24,8 +25,9 @@ post_build_if:
     - cp *.deb {config.binary_dir}
 
 depends: 
+  - matlogger2
   - pybind11
-  - OpenSoT
-  - ReflexxesTypeII
-  - estimation_utils
+  - pinocchio
+  - xbot_msgs
+
 

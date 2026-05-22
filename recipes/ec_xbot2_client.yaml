@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/ec_xbot2_client.git
-  tag: devel_no_jm
+  tag: ros2
 
 pre_build_if:
   binary_gen:
@@ -25,3 +25,4 @@ post_build_if:
 depends:
   - xbot2
   - ecat_master
+  - ec_xbot2_interfaces

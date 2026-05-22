@@ -1,12 +1,11 @@
 clone:
   type: git
   server: github.com
-  repository: advrhumanoids/xbot2_tools.git
+  repository: ADVRHumanoids/CentauroConfig.git
   tag: ros2
 
 build:
   type: cmake
 
 depends:
-  - xbot2
-
+  - iit-centauro-ros-pkg

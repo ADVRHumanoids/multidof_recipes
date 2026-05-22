@@ -1,0 +1,17 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/iit-anime-ros-pkg.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - anime_urdf: anime_urdf
+    - anime_srdf: anime_srdf
+    - anime_cartesio: anime_cartesio
+    - anime_bt: anime_bt
+    - anime_gazebo: anime_gazebo
+    - anime_xbot2: anime_xbot2
+    - anime_curobo: anime_curobo
