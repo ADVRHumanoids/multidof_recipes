@@ -21,6 +21,7 @@ build:
     xeno: 
       - -DXBOT2_ENABLE_XENO=ON
       - -DXBOT2_REALTIME=ON
+      - -DXBOT2_GZ_SUPPORT=OFF
 
 post_build_if:
   binary_gen:
