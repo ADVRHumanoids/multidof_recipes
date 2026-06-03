@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: koide3/hdl_global_localization.git
+  tag: humble
+  recursive: true
+  # ros_src: true
+
+build:
+  type: cmake

@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: koide3/ndt_omp.git
+  tag: master
+  ros_src: true
+
+build:
+  type: cmake
