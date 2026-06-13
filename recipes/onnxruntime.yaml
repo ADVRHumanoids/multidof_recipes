@@ -1,0 +1,10 @@
+build:
+  type: custom
+  cmd:
+   - wget https://github.com/microsoft/onnxruntime/releases/download/v1.26.0/onnxruntime-linux-x64-1.26.0.tgz
+   - tar -xvf onnxruntime-linux-x64-1.26.0.tgz 
+   - mkdir -p {installdir}/include/onnxruntime
+   - mkdir -p {installdir}/lib {installdir}/lib64
+   - cd onnxruntime-linux-x64-1.26.0 && cp -r include/* {installdir}/include/onnxruntime 
+   - cd onnxruntime-linux-x64-1.26.0 && cp lib/*.so.* {installdir}/lib64 && rm lib/*.so
+   - cd onnxruntime-linux-x64-1.26.0 && cp -r lib/* {installdir}/lib
