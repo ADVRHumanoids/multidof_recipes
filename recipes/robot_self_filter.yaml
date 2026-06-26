@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/robot_self_filter.git
+  tag: main
+
+build:
+  type: cmake
+
+depends: []
