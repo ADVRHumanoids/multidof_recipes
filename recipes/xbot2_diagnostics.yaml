@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/xbot2_diagnostics.git
+  tag: master
+
+build:
+  type: cmake
+
