@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/acea_concert.git
+  tag: master
+  ros_src: true
+
+build:
+  type: cmake
