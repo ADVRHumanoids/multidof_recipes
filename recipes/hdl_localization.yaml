@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/hdl_localization.git
+  tag: humble
+  ros_src: true
+
+build:
+  type: cmake
+
+depends:
+  - fast_gicp
+  - ndt_omp
+  - hdl_global_localization

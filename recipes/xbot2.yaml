@@ -16,10 +16,12 @@ build:
   args:
     - -DXBOT2_DEBUG_PRINTS=ON
     - -DXBOT2_GZ_SUPPORT=ON
+    - -DXBOT2_PYTHON_SUPPORT=ON
   args_if:
     xeno: 
       - -DXBOT2_ENABLE_XENO=ON
       - -DXBOT2_REALTIME=ON
+      - -DXBOT2_GZ_SUPPORT=OFF
 
 post_build_if:
   binary_gen:

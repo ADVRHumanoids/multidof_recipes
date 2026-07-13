@@ -10,3 +10,5 @@ build:
 depends:
   - xbot2
   - mujoco_cmake
+  - xbot2_py_bridge
+

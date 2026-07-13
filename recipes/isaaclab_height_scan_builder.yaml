@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/isaaclab_height_scan_builder.git
+  tag: main
+
+build:
+  type: cmake
+
+depends:
+ - robot_self_filter

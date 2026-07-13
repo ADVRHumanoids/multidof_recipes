@@ -2,11 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/realsense_gazebo_plugin.git
-  tag: melodic-devel 
+  tag: gz-harmonic
   
 build:
   type: cmake
-  
-depends:
-  - realsense2_description
-  - camera_info_manager
