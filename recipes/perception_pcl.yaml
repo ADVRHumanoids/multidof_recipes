@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/perception_pcl.git
+  tag: jazzy_v2
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - pcl_ros: pcl_ros
+    - perception_pcl: perception_pcl
+    - pcl_conversions: pcl_conversions

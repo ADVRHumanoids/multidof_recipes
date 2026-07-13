@@ -2,14 +2,16 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-centauro-ros-pkg.git
-  tag: devel
-  tag_if:
-    stable: master
-  ros_src: true
+  tag: ros2
   
 build:
   type: cmake
-  target: all
+  cmakelists:
+    - centauro_urdf: centauro_urdf
+    - centauro_srdf: centauro_srdf
+    - centauro_gazebo: centauro_gazebo
+    - centauro_config: centauro_config
+    - centauro_mujoco: centauro_mujoco
 
 pre_build_if:
   binary_gen:
@@ -21,10 +23,8 @@ post_build_if:
     - cp *.deb {config.binary_dir}
       
 depends:
-  - realsense_gazebo_description
-  - velodyne_description
-  - velodyne_gazebo_plugins
   - iit-dagana-ros-pkg
+  - velodyne_simulator
 
 depends_if:
   xacro_gen:

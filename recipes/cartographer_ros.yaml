@@ -1,0 +1,13 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/cartographer_ros.git
+  tag: ros2
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - cartographer_ros_msgs: cartographer_ros_msgs
+    - cartographer_ros: cartographer_ros
+    - cartographer_rviz: cartographer_rviz

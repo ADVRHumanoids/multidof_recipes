@@ -3,6 +3,11 @@ clone:
   server: github.com
   repository: advrhumanoids/xbot_env.git
   tag: master
+  tag_if:
+    ubuntu_release == 22.04:
+      ros2-humble
+    ubuntu_release == 24.04:
+      ros2-jazzy
 
 build:
   type: cmake

@@ -1,7 +1,4 @@
-clone:
-  type: git
-  server: github.com
-  repository: advrhumanoids/concert_perception.git
-  ros_src: true
-  tag: master
-  
+depends:
+ - perception_pcl
+ - pointcloud_to_laserscan
+ - ira_laser_tools

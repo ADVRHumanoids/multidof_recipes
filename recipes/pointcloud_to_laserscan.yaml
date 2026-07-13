@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/pointcloud_to_laserscan.git
+  tag: jazzy_v2
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - pointcloud_to_laserscan: pointcloud_to_laserscan

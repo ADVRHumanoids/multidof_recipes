@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/concert_config.git
+  tag: ros2_up
+  recursive: true
+
+build:
+  type: cmake

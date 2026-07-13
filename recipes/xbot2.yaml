@@ -2,10 +2,10 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/xbot2.git
-  tag: devel
+  tag: ros2
   tag_if: 
-    stable: v2.12.0
-    ros2: ros2
+    env('ROS_DISTRO') == 'humble': ros2-humble
+
 
 pre_build_if:
   binary_gen:
@@ -14,7 +14,8 @@ pre_build_if:
 build:
   type: cmake
   args:
-    - -DXBOT2_DEBUG_PRINTS=TRUE
+    - -DXBOT2_DEBUG_PRINTS=ON
+    - -DXBOT2_GZ_SUPPORT=ON
   args_if:
     xeno: 
       - -DXBOT2_ENABLE_XENO=ON
@@ -26,7 +27,7 @@ post_build_if:
     - cp *.deb {config.binary_dir}
 
 depends: 
-  - XBotInterface
+  - xbot2_interface
   - matlogger2
   - xbot_msgs
 
