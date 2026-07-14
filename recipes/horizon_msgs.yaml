@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/horizon_msgs.git
-  tag: master
+  tag: ros2
 
 build:
   type: cmake
