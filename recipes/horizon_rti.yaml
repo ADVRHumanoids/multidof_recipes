@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/horizon_rti.git
-  tag: ros2
+  tag: ros2_merge
   
 build:
   type: cmake
