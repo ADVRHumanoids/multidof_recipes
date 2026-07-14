@@ -9,3 +9,4 @@ build:
 
 depends:
   - onnxruntime
+  - xbot2_diagnostics
