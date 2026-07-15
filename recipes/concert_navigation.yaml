@@ -11,6 +11,4 @@ build:
     - concert_navigation: concert_navigation
 
 depends:
- - pointcloud_to_laserscan
- - ira_laser_tools
  - concert_mapping

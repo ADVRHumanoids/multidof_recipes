@@ -10,4 +10,4 @@ build:
 
 depends:
  - rtabmap_ros
- - cartographer_ros
+ - perception_utils_ros2

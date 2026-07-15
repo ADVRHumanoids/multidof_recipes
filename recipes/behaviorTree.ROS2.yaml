@@ -1,0 +1,12 @@
+clone:
+  type: git
+  server: github.com
+  repository: BehaviorTree/BehaviorTree.ROS2.git
+  tag: humble
+
+build:
+  type: cmake
+  cmakelists:
+    - btcpp_ros2_interfaces: btcpp_ros2_interfaces
+    - behaviortree_ros2: behaviortree_ros2
+

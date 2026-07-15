@@ -1,0 +1,9 @@
+clone:
+  type: git
+  server: github.com
+  repository: AlessioLovato/concert_base_bridge.git
+  tag: jazzy
+
+build:
+  type: cmake
+

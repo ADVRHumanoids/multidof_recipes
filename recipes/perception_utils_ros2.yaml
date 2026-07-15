@@ -11,5 +11,6 @@ build:
     - perception_utils_ros2: perception_utils_ros2
 
 depends:
+ - estimation_utils
  - base_estimation
  - pointcloud_to_laserscan

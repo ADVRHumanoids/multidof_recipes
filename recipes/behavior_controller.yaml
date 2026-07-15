@@ -1,0 +1,11 @@
+clone:
+  type: git
+  server: github.com
+  repository: ADVRHumanoids/behavior_controller.git
+  tag: main
+
+build:
+  type: cmake
+
+depends:
+ - behaviorTree.ROS2

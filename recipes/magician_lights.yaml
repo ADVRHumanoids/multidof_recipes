@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/MAGICIAN_lights_PWM_control.git
+  tag: srvs
+
+build:
+  type: cmake
+  cmakelists:
+    - pwm_lights_control: pwm_lights_control
