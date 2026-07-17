@@ -11,3 +11,6 @@ build:
   
 depends:
   - casadi_kin_dyn
+  
+system_depends:
+	- swig
