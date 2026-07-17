@@ -7,3 +7,5 @@ clone:
 build:
   type: cmake
 
+depends:
+  - nlohmann_json
