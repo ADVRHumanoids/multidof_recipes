@@ -9,5 +9,5 @@ build:
   type: cmake
 
 depends:
- - rtabmap_ros
+#  - rtabmap_ros
  - perception_utils_ros2

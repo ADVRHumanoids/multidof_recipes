@@ -1,0 +1,14 @@
+clone:
+  type: git
+  server: github.com
+  repository: AlessioLovato/defect_pipeline.git
+  tag: cleaning
+  recursive: true
+
+build:
+  type: cmake
+  cmakelists:
+    - defect_map_interfaces: defect_map_interfaces
+    - defect_localization: defect_localization
+    - defect_pipeline: defect_pipeline
+
