@@ -1,0 +1,16 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/mpeg_ts_image_transport.git
+  tag: master
+
+build:
+  type: cmake
+  cmakelists:
+    - mpeg_ts_image_transport_msgs: mpeg_ts_image_transport_msgs
+    - mpeg_ts_image_transport: mpeg_ts_image_transport
+
+depends: []
+
+system_depends:
+  - ros-${ROS_DISTRO}-ffmpeg-encoder-decoder
