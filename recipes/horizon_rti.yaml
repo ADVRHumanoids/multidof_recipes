@@ -9,4 +9,6 @@ build:
   
 depends:
   - horizon
+  - horizon_msgs
+  - phase_manager
   

@@ -23,3 +23,7 @@ depends:
   - osqp
   - ipopt
 
+system_depends:
+  - swig
+
+
