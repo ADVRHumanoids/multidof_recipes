@@ -10,5 +10,6 @@ build:
   cmakelists:
     - defect_map_interfaces: defect_map_interfaces
     - defect_localization: defect_localization
+    - coverage_planning: coverage_planning
     - defect_pipeline: defect_pipeline
 
