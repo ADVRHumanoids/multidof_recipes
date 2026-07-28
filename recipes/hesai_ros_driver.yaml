@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: HesaiTechnology/HesaiLidar_ROS_2.0.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+
