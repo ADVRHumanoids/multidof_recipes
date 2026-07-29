@@ -1,0 +1,10 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/network_bridge.git
+  tag: master
+  recursive: true
+
+build:
+  type: cmake
+
