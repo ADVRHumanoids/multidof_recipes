@@ -12,3 +12,5 @@ depends:
   - mujoco_cmake
   - xbot2_py_bridge
 
+system_depends:
+  - libglfw3-dev
