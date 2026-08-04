@@ -6,6 +6,8 @@ clone:
   
 build:
   type: cmake
+  args:
+    - -DBUILD_TESTING=OFF
   
 depends:
   - horizon

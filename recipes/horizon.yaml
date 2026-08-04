@@ -7,7 +7,7 @@ clone:
 build:
   type: custom
   cmd:
-    - pip install -e {srcdir} --no-deps
+    - CMAKE_INSTALL_PREFIX={installdir} pip install -e {srcdir} --no-deps
   
 depends:
   - casadi_kin_dyn
