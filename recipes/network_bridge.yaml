@@ -8,3 +8,7 @@ clone:
 build:
   type: cmake
 
+system_depends:
+  - flex
+  - bison
+  - ninja-build
