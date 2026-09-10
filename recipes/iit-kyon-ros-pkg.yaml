@@ -14,7 +14,7 @@ build:
     - kyon_config: kyon_config
     - kyon_mujoco: kyon_mujoco
     - kyon_cartesio: kyon_cartesio
-    - kyon_isaac: kyon_isaac
+      # - kyon_isaac: kyon_isaac
 
 
 depends:
