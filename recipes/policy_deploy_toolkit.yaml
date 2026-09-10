@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/policy_deploy_toolkit.git
-  tag: master
+  tag: automatic
 
 build:
   type: cmake
