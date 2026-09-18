@@ -8,3 +8,5 @@ clone:
 build:
   type: cmake
 
+system_depends:
+ - libgstreamer-plugins-base1.0-dev
