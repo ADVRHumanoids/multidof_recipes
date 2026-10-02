@@ -1,0 +1,8 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/circular_bag_recorder.git
+  tag: master
+
+build:
+  type: cmake
