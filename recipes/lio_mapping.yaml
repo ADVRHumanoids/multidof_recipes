@@ -1,0 +1,26 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/lio_mapping.git
+  tag: master
+
+build:
+  type: cmake
+  cmakelists:
+    - lidar_deskew: lidar_deskew
+    - fast_lio: fast_lio
+    - elevation_mapping_cpp: elevation_mapping_cpp
+    - lio_mapping: lio_mapping
+
+system_depends:
+  - ros-jazzy-pcl-ros
+  - ros-jazzy-pcl-conversions
+  - ros-jazzy-grid-map-msgs
+  - ros-jazzy-grid-map-rviz-plugin
+  - ros-jazzy-tf2-eigen
+  - ros-jazzy-rosbag2-storage-mcap
+  - libyaml-cpp-dev
+  - libopencv-dev
+  - libtbb-dev
+  - ros-jazzy-gtsam
+  - pcl-tools
