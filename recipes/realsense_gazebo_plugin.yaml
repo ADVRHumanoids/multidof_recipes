@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: ADVRHumanoids/realsense_gazebo_plugin.git
-  tag: melodic-devel 
+  tag: 09f98fdae0de649a3848aea9616632768d7f7718 
   
 build:
   type: cmake
