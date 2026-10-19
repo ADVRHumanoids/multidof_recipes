@@ -7,5 +7,6 @@ clone:
 build:
   type: cmake
 
-depends:
-  - realsense_gazebo_plugin
+depends_if:
+  "not mode('rt')":
+    - realsense_gazebo_plugin
