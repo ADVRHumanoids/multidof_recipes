@@ -6,3 +6,7 @@ clone:
   
 build:
   type: cmake
+
+depends:
+ - estimation_utils
+
