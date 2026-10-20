@@ -1,0 +1,33 @@
+clone:
+  type: git
+  server: github.com
+  repository: advrhumanoids/kyon_navigation.git
+  tag: master
+
+build:
+  type: cmake
+  cmakelists:
+    - kyon_navigation: .
+
+depends:
+  - lio_mapping
+  - iit-kyon-ros-pkg
+
+system_depends:
+  - ros-jazzy-nav2-planner
+  - ros-jazzy-nav2-controller
+  - ros-jazzy-nav2-mppi-controller
+  - ros-jazzy-nav2-smac-planner
+  - ros-jazzy-nav2-bt-navigator
+  - ros-jazzy-nav2-lifecycle-manager
+  - ros-jazzy-nav2-costmap-2d
+  - ros-jazzy-nav2-rviz-plugins
+  - ros-jazzy-grid-map-core
+  - ros-jazzy-grid-map-ros
+  - ros-jazzy-grid-map-msgs
+  - ros-jazzy-ros-gz
+  - ros-jazzy-robot-state-publisher
+  - ros-jazzy-pluginlib
+  - ros-jazzy-tf2-ros
+  - ros-jazzy-pcl-conversions
+  - ros-jazzy-teleop-twist-keyboard
