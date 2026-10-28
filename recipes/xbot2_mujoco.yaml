@@ -14,3 +14,9 @@ depends:
 
 system_depends:
   - libglfw3-dev
+
+pip_depends:
+  - mujoco-lidar
+  - mujoco-lidar[warp]
+  - mujoco-lidar[jax]
+  - mujoco-lidar[taichi]
