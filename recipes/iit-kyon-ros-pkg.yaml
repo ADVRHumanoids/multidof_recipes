@@ -2,7 +2,7 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-kyon-ros-pkg.git
-  tag: ros2
+  tag: crzz-dev
   ros_src: true
 
 build:
