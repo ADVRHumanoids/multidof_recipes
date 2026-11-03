@@ -3,6 +3,7 @@ clone:
   server: github.com
   repository: advrhumanoids/kyon_navigation.git
   tag: master
+  recursive: true
 
 build:
   type: cmake
@@ -10,7 +11,6 @@ build:
     - kyon_navigation: .
 
 depends:
-  - lio_mapping
   - iit-kyon-ros-pkg
 
 system_depends:
