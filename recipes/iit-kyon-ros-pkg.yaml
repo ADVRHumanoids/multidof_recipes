@@ -23,3 +23,5 @@ depends:
   - velodyne_description
   - xbot2_mujoco
 
+system_depends:
+  - ros-jazzy-ros-gz

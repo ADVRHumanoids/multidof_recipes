@@ -9,9 +9,14 @@ build:
   type: cmake
   cmakelists:
     - kyon_navigation: .
+  args_if:
+    robot:
+      - -DKYON_NAVIGATION_SIM=OFF
 
-depends:
-  - iit-kyon-ros-pkg
+# The sim's robot (URDFs, XBot2 on MuJoCo); on the robot XBot2 is already installed.
+depends_if:
+  "not mode('robot')":
+    - iit-kyon-ros-pkg
 
 system_depends:
   - ros-jazzy-nav2-planner
@@ -25,7 +30,6 @@ system_depends:
   - ros-jazzy-grid-map-core
   - ros-jazzy-grid-map-ros
   - ros-jazzy-grid-map-msgs
-  - ros-jazzy-ros-gz
   - ros-jazzy-robot-state-publisher
   - ros-jazzy-pluginlib
   - ros-jazzy-tf2-ros
