@@ -1,4 +1,5 @@
 depends:
+  - osqp
   - xbot2
   - cartesian_interface
   - iit-centauro-ros-pkg
