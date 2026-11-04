@@ -24,4 +24,4 @@ depends:
   - xbot2_mujoco
 
 system_depends:
-  - ros-jazzy-ros-gz
+  - ros-${ROS_DISTRO}-ros-gz
