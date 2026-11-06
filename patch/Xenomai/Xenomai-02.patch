@@ -1,0 +1,12 @@
+diff --git a/testsuite/smokey/sched-tp/sched-tp.c b/testsuite/smokey/sched-tp/sched-tp.c
+--- a/testsuite/smokey/sched-tp/sched-tp.c
++++ b/testsuite/smokey/sched-tp/sched-tp.c
+@@ -128,7 +128,7 @@ static int run_sched_tp(struct smokey_test *t, int argc, char *const argv[])
+ 	union sched_config *p;
+ 	int ret, n, policies;
+ 	size_t len;
+-	char *s;
++	const char *s;
+ 
+ 	ret = cobalt_corectl(_CC_COBALT_GET_POLICIES, &policies, sizeof(policies));
+ 	if (ret || (policies & _CC_COBALT_SCHED_TP) == 0)
