@@ -20,9 +20,9 @@ build:
 depends:
   - xbot2_ros
   - velodyne_simulator
-    #  - realsense_gazebo_description
   - velodyne_description
-    #- velodyne_gazebo_plugins
   - zed_description
+  - xbot2_mujoco
 
-
+system_depends:
+  - ros-${ROS_DISTRO}-ros-gz

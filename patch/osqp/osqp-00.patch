@@ -1,0 +1,35 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ # Minimum version required
+-cmake_minimum_required (VERSION 3.2)
++cmake_minimum_required (VERSION 3.5)
+ 
+ # Project name
+ project (osqp)
+@@ -358,6 +358,14 @@
+         FILE osqp-targets.cmake
+         NAMESPACE osqp::
+         DESTINATION ${ConfigPackageLocation})
++
++include(CMakePackageConfigHelpers)
++write_basic_package_version_file(
++    ${CMAKE_CURRENT_BINARY_DIR}/osqp-config-version.cmake
++    VERSION ${OSQP_VERSION}
++    COMPATIBILITY SameMajorVersion)
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/osqp-config-version.cmake
++    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/osqp)
+ 
+ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/osqp-config.cmake
+         DESTINATION ${ConfigPackageLocation})
+diff --git a/lin_sys/direct/qdldl/qdldl_sources/CMakeLists.txt b/lin_sys/direct/qdldl/qdldl_sources/CMakeLists.txt
+--- a/lin_sys/direct/qdldl/qdldl_sources/CMakeLists.txt
++++ b/lin_sys/direct/qdldl/qdldl_sources/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ # Minimum version required
+-cmake_minimum_required (VERSION 3.2)
++cmake_minimum_required (VERSION 3.5)
+ 
+ # Project name
+ project (qdldl)

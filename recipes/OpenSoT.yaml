@@ -21,6 +21,8 @@ post_build_if:
 
 depends: 
   - xbot2_interface
-  - osqp
+  - name: osqp
+    version: '0.6.3'
+    exact: true
 
 

@@ -1,17 +1,24 @@
 clone:
   type: git
   server: github.com
-  repository: oxfordcontrol/osqp.git
+  repository: osqp/osqp.git
   tag: v0.6.3 # required by current version of casadi, as master is no longer compatible
   recursive: true
 
 build:
-  type: cmake
-  args:
-    - -DDLONG=OFF 
-    - -DPRINTING=OFF
-    - -DPROFILING=OFF
-    - -DENABLE_MKL_PARDISO=OFF
+  # Forest's CMake pre_build hook runs after configure; patch first, as Xenomai does.
+  type: custom
+  cmd:
+    - >-
+      cd "{srcdir}" &&
+      (git apply --reverse --check ../../recipes/multidof_recipes/patch/osqp/osqp-00.patch 2>/dev/null ||
+      git apply ../../recipes/multidof_recipes/patch/osqp/osqp-00.patch)
+    - >-
+      cmake -S "{srcdir}" -B "{srcdir}/../../build/osqp"
+      -DCMAKE_INSTALL_PREFIX="{installdir}" -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      -DOSQP_VERSION=0.6.3 -DDLONG=OFF -DPRINTING=OFF -DPROFILING=OFF
+      -DENABLE_MKL_PARDISO=OFF
+    - cmake --build "{srcdir}/../../build/osqp" --target install --parallel {jobs}
 
 depends: []
 

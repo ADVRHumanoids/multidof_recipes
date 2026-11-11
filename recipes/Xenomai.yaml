@@ -7,14 +7,19 @@ clone:
 build:
   type: custom
   cmd:
-    - cd {srcdir} && git diff-index --quiet HEAD -- && git apply ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-00.patch
+    - cd {srcdir} && (git apply --reverse --check ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-00.patch 2>/dev/null || git apply ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-00.patch)
+    # rt-utils does not use the legacy sched_attr declarations, which conflict with modern glibc.
+    - cd {srcdir} && (git apply --reverse --check ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-01.patch 2>/dev/null || git apply ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-01.patch)
+    # Preserve const when strstr returns a pointer into the reference schedule.
+    - cd {srcdir} && (git apply --reverse --check ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-02.patch 2>/dev/null || git apply ../../recipes/multidof_recipes/patch/Xenomai/Xenomai-02.patch)
     - cd {srcdir} && ./scripts/bootstrap
     - "{srcdir}/configure --enable-pshared --enable-tls --enable-dlopen-libs --enable-async-cancel --enable-smp"
     - make -j {jobs}
-    - sudo make install
+    # Forest waits before reading command output; keep verbose installation output out of its pipe.
+    - sudo make install > xenomai-install.log 2>&1 || (tail -n 50 xenomai-install.log; exit 1)
     - sudo touch /etc/ld.so.conf.d/xenomai.conf
     - "sudo sh -c 'echo /usr/xenomai/lib/ > /etc/ld.so.conf.d/xenomai.conf'"
     - sudo ldconfig
-    - git clone https://github.com/nolange/cmake_xenomai.git {srcdir}/cmake_xenomai
+    - test -d {srcdir}/cmake_xenomai/.git || git clone https://github.com/nolange/cmake_xenomai.git {srcdir}/cmake_xenomai
     - sudo mkdir -p /usr/xenomai/lib/cmake/xenomai
     - sudo {srcdir}/cmake_xenomai/config/install_cmakeconfig.sh --version 3.2.1 -- /usr/xenomai/lib/cmake/xenomai
