@@ -2,23 +2,29 @@ clone:
   type: git
   server: github.com
   repository: advrhumanoids/iit-concert-ros-pkg.git
-  tag: master
+  tag: ros2
   ros_src: true
-  recursive: true
   recursive: true
 
 build:
   type: cmake
   cmakelists:
+    - concert_resources: concert_resources
+    - concert_urdf: concert_urdf
+    - concert_srdf: concert_srdf
+    - concert_usd: concert_usd
     - concert_gazebo: concert_gazebo
-    - concert_config: concert_config
     - concert_odometry_ros2: concert_odometry_ros2
     - concert_examples: concert_examples
     - concert_cartesio: concert_cartesio
-    - concert_resources: concert_resources
+    - concert_isaac: concert_isaac
+    - concert_tests: concert_tests
 depends:
   - modular
   - velodyne_simulator
+  - xbot2_gui_server
+  - xbot2_ros
+  - concert_launcher
     #  - realsense_gazebo_description
     #- velodyne_description
     #- velodyne_gazebo_plugins
